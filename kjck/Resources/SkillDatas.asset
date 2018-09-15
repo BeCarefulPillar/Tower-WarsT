@@ -1,0 +1,1994 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ed9188df48350a499a2dbfaab4cc0df, type: 3}
+  m_Name: SkillDatas
+  m_EditorClassIdentifier: 
+  mDatas:
+  - sname: e69eaae585b5e699aee694bb
+    kind: 0
+    sort: 1
+    lv: 1
+    icon: 0
+    target: 2
+    typ: 1
+    area: 0
+    dis: 4
+    tim: 1
+    damage: 64616d2a302e33
+    buff_target: 0
+    buff_typ: 0
+    buff: 0
+    chance: 0
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 30
+    mg: 0
+    fval: 0
+    fg: 0
+    info: 
+    sn: 1
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSpeed: 0
+      Speed: 0
+      TypeFly: 0
+      IsCollisionHit: 0
+      CollisionFinish: 0
+      EmitterWidth: 0
+      BulletNumber: 0
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSingleEffect: 0
+    IsIncessancy: 0
+    EffectMask: 0
+  - sname: e9aa91e585b5e699aee694bb
+    kind: 0
+    sort: 1
+    lv: 1
+    icon: 0
+    target: 2
+    typ: 1
+    area: 0
+    dis: 4
+    tim: 1
+    damage: 64616d2a302e33
+    buff_target: 0
+    buff_typ: 0
+    buff: 0
+    chance: 0
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 30
+    mg: 0
+    fval: 0
+    fg: 0
+    info: 
+    sn: 2
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSpeed: 0
+      Speed: 0
+      TypeFly: 0
+      IsCollisionHit: 0
+      CollisionFinish: 0
+      EmitterWidth: 0
+      BulletNumber: 0
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSingleEffect: 0
+    IsIncessancy: 0
+    EffectMask: 0
+  - sname: e5bc93e7aeade699aee694bb
+    kind: 0
+    sort: 1
+    lv: 1
+    icon: 0
+    target: 2
+    typ: 1
+    area: 0
+    dis: 12
+    tim: 1
+    damage: 64616d2a302e33
+    buff_target: 0
+    buff_typ: 0
+    buff: 0
+    chance: 0
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 30
+    mg: 0
+    fval: 0
+    fg: 0
+    info: 
+    sn: 3
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSpeed: 0
+      Speed: 0
+      TypeFly: 0
+      IsCollisionHit: 0
+      CollisionFinish: 0
+      EmitterWidth: 0
+      BulletNumber: 0
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSingleEffect: 0
+    IsIncessancy: 0
+    EffectMask: 0
+  - sname: e8b08be5a3abe699aee694bb
+    kind: 0
+    sort: 1
+    lv: 1
+    icon: 0
+    target: 2
+    typ: 1
+    area: 0
+    dis: 12
+    tim: 1
+    damage: 64616d2a302e33
+    buff_target: 0
+    buff_typ: 0
+    buff: 0
+    chance: 0
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 30
+    mg: 0
+    fval: 0
+    fg: 0
+    info: 
+    sn: 4
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSpeed: 0
+      Speed: 0
+      TypeFly: 0
+      IsCollisionHit: 0
+      CollisionFinish: 0
+      EmitterWidth: 0
+      BulletNumber: 0
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSingleEffect: 0
+    IsIncessancy: 0
+    EffectMask: 0
+  - sname: e68898e8bda6e699aee694bb
+    kind: 0
+    sort: 1
+    lv: 1
+    icon: 0
+    target: 2
+    typ: 1
+    area: 0
+    dis: 4
+    tim: 1
+    damage: 64616d2a302e33
+    buff_target: 0
+    buff_typ: 0
+    buff: 0
+    chance: 0
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 30
+    mg: 0
+    fval: 0
+    fg: 0
+    info: 
+    sn: 5
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSpeed: 0
+      Speed: 0
+      TypeFly: 0
+      IsCollisionHit: 0
+      CollisionFinish: 0
+      EmitterWidth: 0
+      BulletNumber: 0
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSingleEffect: 0
+    IsIncessancy: 0
+    EffectMask: 0
+  - sname: e6ada6e4beafe5a587e69caf
+    kind: 1
+    sort: 1
+    lv: 1
+    icon: 0
+    target: 2
+    typ: 2
+    area: 0
+    dis: 12
+    tim: 3
+    damage: 64616d2a302e382b3834342b31322a6c76
+    buff_target: 0
+    buff_typ: 0
+    buff: 1
+    chance: 0
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 80
+    mg: 1
+    fval: 844
+    fg: 12
+    info: e59ca8e68898e59cbae4b88ae5b883e7bdaee585abe58da6e998b5efbc8ce4bdbfe585a8e59cbae6958ce4babae999b7e585a5e6b7b7e4b9b1efbc8ce5b9b6e68c81e7bbade980a0e688905b315d2b5b325de4bca4e5aeb3
+    sn: 6
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 1
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f365f686974
+      HavHitEffect: 0
+      HitEffectName: 
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 65665f736b696c6c5f666c795f36
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSpeed: 0
+      Speed: 0
+      TypeFly: 0
+      IsCollisionHit: 0
+      CollisionFinish: 0
+      EmitterWidth: 0
+      BulletNumber: 0
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 1
+      Duration: 0
+      EffectName: 65665f736b696c6c5f7461726765745f36
+      HavHitEffect: 0
+      HitEffectName: 65665f736b696c6c5f7461726765745f365f686974
+      IsSingleEffect: 0
+    IsIncessancy: 0
+    EffectMask: 4
+  - sname: e5a587e9a38ee5bc82e69caf
+    kind: 1
+    sort: 1
+    lv: 1
+    icon: 0
+    target: 2
+    typ: 2
+    area: 0
+    dis: 12
+    tim: 1
+    damage: 64616d2a312e392b313936302b32382a6c76
+    buff_target: 0
+    buff_typ: 0
+    buff: 0
+    chance: 0
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 190
+    mg: 2
+    fval: 1960
+    fg: 28
+    info: e9be99e58db7e9a38ee5b8ade58db7e6958ce696b9e998b5e890a5e980a0e688905b315d2b5b325de4bca4e5aeb3efbc8ce5b9b6e4bdbfe585a8e4bd93e6958ce696b9e694bbe998b2e694bbe9809fe7a7bbe9809fe9998de4bd8e
+    sn: 7
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 1
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f37
+      HavHitEffect: 0
+      HitEffectName: 
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0.35
+      EffectName: 65665f736b696c6c5f666c795f37
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSpeed: 0
+      Speed: 100
+      TypeFly: 0
+      IsCollisionHit: 0
+      CollisionFinish: 0
+      EmitterWidth: 0
+      BulletNumber: 0
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 1
+      Duration: 0
+      EffectName: 65665f736b696c6c5f7461726765745f37
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSingleEffect: 1
+    IsIncessancy: 0
+    EffectMask: 4
+  - sname: e8998ee4beafe7a0b4e6958c
+    kind: 1
+    sort: 1
+    lv: 1
+    icon: 0
+    target: 2
+    typ: 1
+    area: 0
+    dis: 6
+    tim: 1
+    damage: 64616d2a312e342b313236302b31382a6c76
+    buff_target: 0
+    buff_typ: 0
+    buff: 0
+    chance: 0
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 140
+    mg: 1
+    fval: 1260
+    fg: 18
+    info: e5afb9e79baee6a087e980a0e688905b315d2b5b325de4bca4e5aeb3efbc8ce5b9b6e69995e79ca9e79baee6a087
+    sn: 8
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 1
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f38
+      HavHitEffect: 0
+      HitEffectName: 
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSpeed: 0
+      Speed: 0
+      TypeFly: 0
+      IsCollisionHit: 0
+      CollisionFinish: 0
+      EmitterWidth: 0
+      BulletNumber: 0
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 1
+      Duration: 0
+      EffectName: 65665f736b696c6c5f7461726765745f38
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSingleEffect: 1
+    IsIncessancy: 0
+    EffectMask: 4
+  - sname: e790b4e7919fe5928ce9b8a3
+    kind: 1
+    sort: 2
+    lv: 1
+    icon: 0
+    target: 1
+    typ: 2
+    area: 0
+    dis: 0
+    tim: 1
+    damage: 61746b2a322e322b313631332b33322a6c76
+    buff_target: 0
+    buff_typ: 0
+    buff: 0
+    chance: 0
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 220
+    mg: 1
+    fval: 1613
+    fg: 32
+    info: e79eace997b4e5afb9e5b7b1e696b9e585a8e4bd93e59b9ee5a48d5b315d2b5b325de782b9e585b5e58a9befbc8ce5b9b6e5a29ee58aa0e5b7b1e696b9e694bbe587bb
+    sn: 9
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 10
+      EffectName: 65665f736b696c6c5f73656c665f395f686974
+      HavHitEffect: 0
+      HitEffectName: 
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f39
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSpeed: 0
+      Speed: 0
+      TypeFly: 0
+      IsCollisionHit: 1
+      CollisionFinish: 0
+      EmitterWidth: 0
+      BulletNumber: 0
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f39
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSingleEffect: 0
+    IsIncessancy: 0
+    EffectMask: 1
+  - sname: e5bcbae585b5e79b9be58abf
+    kind: 1
+    sort: 1
+    lv: 1
+    icon: 0
+    target: 2
+    typ: 4
+    area: 8
+    dis: 6
+    tim: 3
+    damage: 64616d2a302e362b3634342b31302a6c76
+    buff_target: 0
+    buff_typ: 0
+    buff: 2
+    chance: 2000
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 60
+    mg: 0
+    fval: 644
+    fg: 10
+    info: e68ca5e8889ee5b7a8e58991e5afb9e88c83e59bb4e58685e79a84e79baee6a087e980a0e6889033e6aca15b315d2b5b325de4bca4e5aeb3
+    sn: 10
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f3130
+      HavHitEffect: 0
+      HitEffectName: 
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f3130
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSpeed: 0
+      Speed: 0
+      TypeFly: 0
+      IsCollisionHit: 0
+      CollisionFinish: 0
+      EmitterWidth: 0
+      BulletNumber: 0
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 1
+      Duration: 0
+      EffectName: 65665f736b696c6c5f7461726765745f31305f686974
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSingleEffect: 1
+    IsIncessancy: 0
+    EffectMask: 4
+  - sname: e8a180e6ba85e9bb84e6b299
+    kind: 1
+    sort: 1
+    lv: 1
+    icon: 0
+    target: 2
+    typ: 5
+    area: 6
+    dis: 18
+    tim: 1
+    damage: 64616d2a312e332b313131352b32322a6c76
+    buff_target: 0
+    buff_typ: 0
+    buff: 1
+    chance: 2000
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 130
+    mg: 0
+    fval: 1115
+    fg: 22
+    info: e5afb9e5898de696b9e8b7afe5be84e4b88ae79a84e79baee6a087e980a0e688905b315d2b5b325de4bca4e5aeb3
+    sn: 11
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f3131
+      HavHitEffect: 0
+      HitEffectName: 
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 65665f736b696c6c5f666c795f3131
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSpeed: 1
+      Speed: 50
+      TypeFly: 0
+      IsCollisionHit: 1
+      CollisionFinish: 1
+      EmitterWidth: 0
+      BulletNumber: 1
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f3131
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSingleEffect: 1
+    IsIncessancy: 0
+    EffectMask: 2
+  - sname: e998b4e9a38ee998b5
+    kind: 1
+    sort: 1
+    lv: 1
+    icon: 0
+    target: 2
+    typ: 2
+    area: 0
+    dis: 12
+    tim: 1
+    damage: 64616d2a312e392b313936302b32382a6c76
+    buff_target: 0
+    buff_typ: 0
+    buff: 0
+    chance: 0
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 190
+    mg: 0
+    fval: 1960
+    fg: 28
+    info: e5afb9e79baee6a087e980a0e688905b315d2b5b325de4bca4e5aeb3efbc8ce5b9b6e69995e79ca9e79baee6a087
+    sn: 12
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f3132
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSpeed: 0
+      Speed: 0
+      TypeFly: 0
+      IsCollisionHit: 0
+      CollisionFinish: 0
+      EmitterWidth: 0
+      BulletNumber: 0
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f3132
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSingleEffect: 1
+    IsIncessancy: 0
+    EffectMask: 4
+  - sname: e68898e4ba89e8b7b5e8b88f
+    kind: 1
+    sort: 1
+    lv: 1
+    icon: 0
+    target: 2
+    typ: 4
+    area: 9
+    dis: 5
+    tim: 1
+    damage: 64616d2a312e392b313936302b32382a6c76
+    buff_target: 0
+    buff_typ: 0
+    buff: 0
+    chance: 0
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 190
+    mg: 0
+    fval: 1960
+    fg: 28
+    info: e5afb9e79baee6a087e980a0e688905b315d2b5b325de4bca4e5aeb3efbc8ce5b9b6e69995e79ca9e79baee6a087
+    sn: 13
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f3133
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSpeed: 0
+      Speed: 0
+      TypeFly: 0
+      IsCollisionHit: 0
+      CollisionFinish: 0
+      EmitterWidth: 0
+      BulletNumber: 0
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f3133
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSingleEffect: 1
+    IsIncessancy: 0
+    EffectMask: 4
+  - sname: e6b49be7a59e
+    kind: 1
+    sort: 1
+    lv: 1
+    icon: 0
+    target: 2
+    typ: 2
+    area: 0
+    dis: 12
+    tim: 3
+    damage: 64616d2a302e362b3634342b31302a6c76
+    buff_target: 0
+    buff_typ: 0
+    buff: 0
+    chance: 0
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 60
+    mg: 0
+    fval: 644
+    fg: 10
+    info: e79eace997b4e5afb9e5b7b1e696b9e585a8e4bd93e59b9ee5a48d5b315d2b5b325de782b9e585b5e58a9befbc8ce5b9b6e5a29ee58aa0e5b7b1e696b9e694bbe587bb
+    sn: 14
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 1
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f31345f686974
+      HavHitEffect: 0
+      HitEffectName: 65665f736b696c6c5f73656c665f31345f686974
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f3134
+      HavHitEffect: 0
+      HitEffectName: 65665f736b696c6c5f73656c665f3134
+      IsSpeed: 1
+      Speed: 0
+      TypeFly: 0
+      IsCollisionHit: 0
+      CollisionFinish: 0
+      EmitterWidth: 0
+      BulletNumber: 0
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f3134
+      HavHitEffect: 0
+      HitEffectName: 65665f736b696c6c5f73656c665f3134
+      IsSingleEffect: 1
+    IsIncessancy: 0
+    EffectMask: 1
+  - sname: e9ad94e7a59ee9998de4b8b4
+    kind: 1
+    sort: 1
+    lv: 1
+    icon: 0
+    target: 2
+    typ: 4
+    area: 15
+    dis: 5
+    tim: 1
+    damage: 64616d2a312e392b313936302b32382a6c76
+    buff_target: 0
+    buff_typ: 0
+    buff: 0
+    chance: 0
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 190
+    mg: 0
+    fval: 1960
+    fg: 28
+    info: e5afb9e79baee6a087e980a0e688905b315d2b5b325de4bca4e5aeb3efbc8ce5b9b6e69995e79ca9e79baee6a087
+    sn: 15
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 1
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f3135
+      HavHitEffect: 0
+      HitEffectName: 
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f3135
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSpeed: 0
+      Speed: 0
+      TypeFly: 0
+      IsCollisionHit: 0
+      CollisionFinish: 0
+      EmitterWidth: 0
+      BulletNumber: 0
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f3135
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSingleEffect: 0
+    IsIncessancy: 0
+    EffectMask: 1
+  - sname: e5b9bbe68391e89b8ae59292
+    kind: 1
+    sort: 1
+    lv: 1
+    icon: 0
+    target: 2
+    typ: 2
+    area: 0
+    dis: 12
+    tim: 1
+    damage: 64616d2a312e392b313936302b32382a6c76
+    buff_target: 0
+    buff_typ: 0
+    buff: 0
+    chance: 0
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 190
+    mg: 0
+    fval: 1960
+    fg: 28
+    info: e5afb9e79baee6a087e980a0e688905b315d2b5b325de4bca4e5aeb3efbc8ce5b9b6e69995e79ca9e79baee6a087
+    sn: 16
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 1
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f3136
+      HavHitEffect: 0
+      HitEffectName: 
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f3136
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSpeed: 0
+      Speed: 0
+      TypeFly: 0
+      IsCollisionHit: 0
+      CollisionFinish: 0
+      EmitterWidth: 0
+      BulletNumber: 0
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f3136
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSingleEffect: 0
+    IsIncessancy: 0
+    EffectMask: 1
+  - sname: e9bc8ee8b6b3e6b19fe4b89c
+    kind: 1
+    sort: 1
+    lv: 1
+    icon: 0
+    target: 2
+    typ: 2
+    area: 0
+    dis: 5
+    tim: 1
+    damage: 64616d2a312e392b313936302b32382a6c76
+    buff_target: 0
+    buff_typ: 0
+    buff: 0
+    chance: 0
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 190
+    mg: 0
+    fval: 1960
+    fg: 28
+    info: e5afb9e79baee6a087e980a0e688905b315d2b5b325de4bca4e5aeb3efbc8ce5b9b6e69995e79ca9e79baee6a087
+    sn: 17
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f3137
+      HavHitEffect: 0
+      HitEffectName: 65665f736b696c6c5f73656c665f3137
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f3137
+      HavHitEffect: 0
+      HitEffectName: 65665f736b696c6c5f73656c665f3137
+      IsSpeed: 0
+      Speed: 0
+      TypeFly: 0
+      IsCollisionHit: 1
+      CollisionFinish: 0
+      EmitterWidth: 0
+      BulletNumber: 0
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f3137
+      HavHitEffect: 0
+      HitEffectName: 65665f736b696c6c5f73656c665f3137
+      IsSingleEffect: 0
+    IsIncessancy: 0
+    EffectMask: 0
+  - sname: e7a59ee9acbce88eabe6b58b
+    kind: 1
+    sort: 1
+    lv: 1
+    icon: 0
+    target: 2
+    typ: 2
+    area: 0
+    dis: 12
+    tim: 1
+    damage: 64616d2a312e392b313936302b32382a6c76
+    buff_target: 0
+    buff_typ: 0
+    buff: 0
+    chance: 0
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 190
+    mg: 0
+    fval: 1960
+    fg: 28
+    info: e5afb9e79baee6a087e980a0e688905b315d2b5b325de4bca4e5aeb3efbc8ce5b9b6e69995e79ca9e79baee6a087
+    sn: 18
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f3138
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSpeed: 0
+      Speed: 0
+      TypeFly: 0
+      IsCollisionHit: 0
+      CollisionFinish: 0
+      EmitterWidth: 0
+      BulletNumber: 0
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f3138
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSingleEffect: 0
+    IsIncessancy: 0
+    EffectMask: 0
+  - sname: e5a699e6898be59b9ee698a5
+    kind: 1
+    sort: 2
+    lv: 1
+    icon: 0
+    target: 1
+    typ: 2
+    area: 0
+    dis: 12
+    tim: 1
+    damage: 61746b2a322e322b313631332b33322a6c76
+    buff_target: 0
+    buff_typ: 0
+    buff: 0
+    chance: 0
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 220
+    mg: 0
+    fval: 1613
+    fg: 32
+    info: e5afb9e79baee6a087e980a0e688905b315d2b5b325de4bca4e5aeb3efbc8ce5b9b6e69995e79ca9e79baee6a087
+    sn: 19
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f3139
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSpeed: 0
+      Speed: 0
+      TypeFly: 0
+      IsCollisionHit: 0
+      CollisionFinish: 0
+      EmitterWidth: 0
+      BulletNumber: 0
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f3139
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSingleEffect: 0
+    IsIncessancy: 0
+    EffectMask: 0
+  - sname: e69eade5a7ac
+    kind: 1
+    sort: 1
+    lv: 1
+    icon: 0
+    target: 2
+    typ: 4
+    area: 10
+    dis: 12
+    tim: 1
+    damage: 64616d2a312e392b313936302b32382a6c76
+    buff_target: 0
+    buff_typ: 0
+    buff: 0
+    chance: 0
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 190
+    mg: 0
+    fval: 1960
+    fg: 28
+    info: e5afb9e79baee6a087e980a0e688905b315d2b5b325de4bca4e5aeb3efbc8ce5b9b6e69995e79ca9e79baee6a087
+    sn: 20
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f3230
+      HavHitEffect: 0
+      HitEffectName: 
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f3230
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSpeed: 0
+      Speed: 0
+      TypeFly: 0
+      IsCollisionHit: 0
+      CollisionFinish: 0
+      EmitterWidth: 0
+      BulletNumber: 0
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f3230
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSingleEffect: 0
+    IsIncessancy: 0
+    EffectMask: 0
+  - sname: e4b883e8bf9be4b883e587ba
+    kind: 1
+    sort: 1
+    lv: 1
+    icon: 0
+    target: 2
+    typ: 4
+    area: 6
+    dis: 5
+    tim: 1
+    damage: 64616d2a312e392b313936302b32382a6c76
+    buff_target: 0
+    buff_typ: 0
+    buff: 0
+    chance: 0
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 190
+    mg: 0
+    fval: 1960
+    fg: 28
+    info: e5afb9e79baee6a087e980a0e688905b315d2b5b325de4bca4e5aeb3efbc8ce5b9b6e69995e79ca9e79baee6a087
+    sn: 21
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f3231
+      HavHitEffect: 0
+      HitEffectName: 
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f3231
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSpeed: 0
+      Speed: 0
+      TypeFly: 0
+      IsCollisionHit: 0
+      CollisionFinish: 0
+      EmitterWidth: 0
+      BulletNumber: 0
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f3231
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSingleEffect: 0
+    IsIncessancy: 0
+    EffectMask: 0
+  - sname: e6ae8ae6adbbe4b880e6908f
+    kind: 1
+    sort: 1
+    lv: 1
+    icon: 0
+    target: 2
+    typ: 1
+    area: 0
+    dis: 6
+    tim: 1
+    damage: 64616d2a312e392b313936302b32382a6c76
+    buff_target: 0
+    buff_typ: 0
+    buff: 0
+    chance: 0
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 190
+    mg: 0
+    fval: 1960
+    fg: 28
+    info: e5afb9e79baee6a087e980a0e688905b315d2b5b325de4bca4e5aeb3efbc8ce5b9b6e69995e79ca9e79baee6a087
+    sn: 22
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSpeed: 0
+      Speed: 0
+      TypeFly: 0
+      IsCollisionHit: 0
+      CollisionFinish: 0
+      EmitterWidth: 0
+      BulletNumber: 0
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSingleEffect: 0
+    IsIncessancy: 0
+    EffectMask: 0
+  - sname: e58886e8a382e7aead
+    kind: 1
+    sort: 1
+    lv: 1
+    icon: 0
+    target: 2
+    typ: 4
+    area: 10
+    dis: 12
+    tim: 1
+    damage: 64616d2a312e392b313936302b32382a6c76
+    buff_target: 0
+    buff_typ: 0
+    buff: 0
+    chance: 0
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 190
+    mg: 0
+    fval: 1960
+    fg: 28
+    info: e5afb9e79baee6a087e980a0e688905b315d2b5b325de4bca4e5aeb3efbc8ce5b9b6e69995e79ca9e79baee6a087
+    sn: 23
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f3233
+      HavHitEffect: 0
+      HitEffectName: 
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSpeed: 0
+      Speed: 0
+      TypeFly: 0
+      IsCollisionHit: 0
+      CollisionFinish: 0
+      EmitterWidth: 0
+      BulletNumber: 0
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSingleEffect: 0
+    IsIncessancy: 0
+    EffectMask: 0
+  - sname: e5bd93e998b3e8998ee595b8
+    kind: 1
+    sort: 1
+    lv: 1
+    icon: 0
+    target: 2
+    typ: 2
+    area: 0
+    dis: 5
+    tim: 1
+    damage: 64616d2a312e392b313936302b32382a6c76
+    buff_target: 0
+    buff_typ: 0
+    buff: 0
+    chance: 0
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 190
+    mg: 0
+    fval: 1960
+    fg: 28
+    info: e5afb9e79baee6a087e980a0e688905b315d2b5b325de4bca4e5aeb3efbc8ce5b9b6e69995e79ca9e79baee6a087
+    sn: 24
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSpeed: 0
+      Speed: 0
+      TypeFly: 0
+      IsCollisionHit: 0
+      CollisionFinish: 0
+      EmitterWidth: 0
+      BulletNumber: 0
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSingleEffect: 0
+    IsIncessancy: 0
+    EffectMask: 0
+  - sname: e78388e781abe7aead
+    kind: 1
+    sort: 1
+    lv: 1
+    icon: 0
+    target: 2
+    typ: 5
+    area: 6
+    dis: 15
+    tim: 1
+    damage: 64616d2a312e392b313936302b32382a6c76
+    buff_target: 0
+    buff_typ: 0
+    buff: 0
+    chance: 0
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 190
+    mg: 0
+    fval: 1960
+    fg: 28
+    info: e5afb9e79baee6a087e980a0e688905b315d2b5b325de4bca4e5aeb3efbc8ce5b9b6e69995e79ca9e79baee6a087
+    sn: 25
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSpeed: 0
+      Speed: 0
+      TypeFly: 0
+      IsCollisionHit: 0
+      CollisionFinish: 0
+      EmitterWidth: 0
+      BulletNumber: 0
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSingleEffect: 0
+    IsIncessancy: 0
+    EffectMask: 0
+  - sname: e7a0b4e5869be587bb
+    kind: 1
+    sort: 1
+    lv: 1
+    icon: 0
+    target: 2
+    typ: 1
+    area: 0
+    dis: 5
+    tim: 1
+    damage: 64616d2a312e392b313936302b32382a6c76
+    buff_target: 0
+    buff_typ: 0
+    buff: 0
+    chance: 0
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 190
+    mg: 0
+    fval: 1960
+    fg: 28
+    info: e5afb9e79baee6a087e980a0e688905b315d2b5b325de4bca4e5aeb3efbc8ce5b9b6e69995e79ca9e79baee6a087
+    sn: 26
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSpeed: 0
+      Speed: 0
+      TypeFly: 0
+      IsCollisionHit: 0
+      CollisionFinish: 0
+      EmitterWidth: 0
+      BulletNumber: 0
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSingleEffect: 0
+    IsIncessancy: 0
+    EffectMask: 0
+  - sname: e781abe7a59ee7a0b4
+    kind: 1
+    sort: 1
+    lv: 1
+    icon: 0
+    target: 2
+    typ: 1
+    area: 0
+    dis: 5
+    tim: 1
+    damage: 64616d2a312e392b313936302b32382a6c76
+    buff_target: 0
+    buff_typ: 0
+    buff: 0
+    chance: 0
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 190
+    mg: 0
+    fval: 1960
+    fg: 28
+    info: e5afb9e79baee6a087e980a0e688905b315d2b5b325de4bca4e5aeb3efbc8ce5b9b6e69995e79ca9e79baee6a087
+    sn: 27
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSpeed: 0
+      Speed: 0
+      TypeFly: 0
+      IsCollisionHit: 0
+      CollisionFinish: 0
+      EmitterWidth: 0
+      BulletNumber: 0
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSingleEffect: 0
+    IsIncessancy: 0
+    EffectMask: 0
+  - sname: e99cb8e78e8be58883e58991
+    kind: 1
+    sort: 1
+    lv: 1
+    icon: 0
+    target: 2
+    typ: 1
+    area: 0
+    dis: 5
+    tim: 1
+    damage: 64616d2a312e392b313936302b32382a6c76
+    buff_target: 0
+    buff_typ: 0
+    buff: 0
+    chance: 0
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 190
+    mg: 0
+    fval: 1960
+    fg: 28
+    info: e5afb9e79baee6a087e980a0e688905b315d2b5b325de4bca4e5aeb3efbc8ce5b9b6e69995e79ca9e79baee6a087
+    sn: 28
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSpeed: 0
+      Speed: 0
+      TypeFly: 0
+      IsCollisionHit: 0
+      CollisionFinish: 0
+      EmitterWidth: 0
+      BulletNumber: 0
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSingleEffect: 0
+    IsIncessancy: 0
+    EffectMask: 0
+  - sname: e69c88e78999e6889f
+    kind: 1
+    sort: 1
+    lv: 1
+    icon: 0
+    target: 2
+    typ: 5
+    area: 6
+    dis: 12
+    tim: 1
+    damage: 64616d2a312e392b313936302b32382a6c76
+    buff_target: 0
+    buff_typ: 0
+    buff: 0
+    chance: 0
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 190
+    mg: 0
+    fval: 1960
+    fg: 28
+    info: e5afb9e79baee6a087e980a0e688905b315d2b5b325de4bca4e5aeb3efbc8ce5b9b6e69995e79ca9e79baee6a087
+    sn: 29
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSpeed: 0
+      Speed: 0
+      TypeFly: 0
+      IsCollisionHit: 0
+      CollisionFinish: 0
+      EmitterWidth: 0
+      BulletNumber: 0
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSingleEffect: 0
+    IsIncessancy: 0
+    EffectMask: 0
+  - sname: e5a4aae5b9b3e8a681e69caf
+    kind: 1
+    sort: 2
+    lv: 1
+    icon: 0
+    target: 1
+    typ: 2
+    area: 0
+    dis: 12
+    tim: 1
+    damage: 61746b2a322e322b313631332b33322a6c76
+    buff_target: 0
+    buff_typ: 0
+    buff: 0
+    chance: 0
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 220
+    mg: 0
+    fval: 1613
+    fg: 32
+    info: e5afb9e79baee6a087e980a0e688905b315d2b5b325de4bca4e5aeb3efbc8ce5b9b6e69995e79ca9e79baee6a087
+    sn: 30
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 65665f736b696c6c5f73656c665f3330
+      HavHitEffect: 0
+      HitEffectName: 
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSpeed: 0
+      Speed: 0
+      TypeFly: 0
+      IsCollisionHit: 0
+      CollisionFinish: 0
+      EmitterWidth: 0
+      BulletNumber: 0
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSingleEffect: 0
+    IsIncessancy: 0
+    EffectMask: 0
+  - sname: e88b8de78bbce595b8
+    kind: 1
+    sort: 1
+    lv: 1
+    icon: 0
+    target: 2
+    typ: 5
+    area: 6
+    dis: 15
+    tim: 1
+    damage: 64616d2a312e392b313936302b32382a6c76
+    buff_target: 0
+    buff_typ: 0
+    buff: 0
+    chance: 0
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 190
+    mg: 0
+    fval: 1960
+    fg: 28
+    info: e5afb9e79baee6a087e980a0e688905b315d2b5b325de4bca4e5aeb3efbc8ce5b9b6e69995e79ca9e79baee6a087
+    sn: 31
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSpeed: 0
+      Speed: 0
+      TypeFly: 0
+      IsCollisionHit: 0
+      CollisionFinish: 0
+      EmitterWidth: 0
+      BulletNumber: 0
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSingleEffect: 0
+    IsIncessancy: 0
+    EffectMask: 0
+  - sname: e5ae81e8b49fe5a4a9e4b88b
+    kind: 1
+    sort: 1
+    lv: 1
+    icon: 0
+    target: 2
+    typ: 2
+    area: 0
+    dis: 5
+    tim: 1
+    damage: 64616d2a312e392b313936302b32382a6c76
+    buff_target: 0
+    buff_typ: 0
+    buff: 0
+    chance: 0
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 190
+    mg: 0
+    fval: 1960
+    fg: 28
+    info: e5afb9e79baee6a087e980a0e688905b315d2b5b325de4bca4e5aeb3efbc8ce5b9b6e69995e79ca9e79baee6a087
+    sn: 32
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSpeed: 0
+      Speed: 0
+      TypeFly: 0
+      IsCollisionHit: 0
+      CollisionFinish: 0
+      EmitterWidth: 0
+      BulletNumber: 0
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSingleEffect: 0
+    IsIncessancy: 0
+    EffectMask: 0
+  - sname: e5b9bfe7bab3e799bee5b79d
+    kind: 1
+    sort: 1
+    lv: 1
+    icon: 0
+    target: 3
+    typ: 1
+    area: 0
+    dis: 0
+    tim: 1
+    damage: 64616d2a312e392b313936302b32382a6c76
+    buff_target: 0
+    buff_typ: 0
+    buff: 0
+    chance: 0
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 190
+    mg: 0
+    fval: 1960
+    fg: 28
+    info: e5afb9e79baee6a087e980a0e688905b315d2b5b325de4bca4e5aeb3efbc8ce5b9b6e69995e79ca9e79baee6a087
+    sn: 33
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSpeed: 0
+      Speed: 0
+      TypeFly: 0
+      IsCollisionHit: 0
+      CollisionFinish: 0
+      EmitterWidth: 0
+      BulletNumber: 0
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSingleEffect: 0
+    IsIncessancy: 0
+    EffectMask: 0
+  - sname: e588b6e8a1a1
+    kind: 1
+    sort: 1
+    lv: 1
+    icon: 0
+    target: 3
+    typ: 3
+    area: 7
+    dis: 5
+    tim: 1
+    damage: 64616d2a312e392b313936302b32382a6c76
+    buff_target: 0
+    buff_typ: 0
+    buff: 0
+    chance: 0
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 190
+    mg: 0
+    fval: 1960
+    fg: 28
+    info: e5afb9e79baee6a087e980a0e688905b315d2b5b325de4bca4e5aeb3efbc8ce5b9b6e69995e79ca9e79baee6a087
+    sn: 34
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSpeed: 0
+      Speed: 0
+      TypeFly: 0
+      IsCollisionHit: 0
+      CollisionFinish: 0
+      EmitterWidth: 0
+      BulletNumber: 0
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSingleEffect: 0
+    IsIncessancy: 0
+    EffectMask: 0
+  - sname: e4b9b1e79fb3e7a9bfe7a9ba
+    kind: 1
+    sort: 1
+    lv: 1
+    icon: 0
+    target: 2
+    typ: 2
+    area: 0
+    dis: 5
+    tim: 1
+    damage: 64616d2a312e392b313936302b32382a6c76
+    buff_target: 0
+    buff_typ: 0
+    buff: 0
+    chance: 0
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 190
+    mg: 0
+    fval: 1960
+    fg: 28
+    info: e5afb9e79baee6a087e980a0e688905b315d2b5b325de4bca4e5aeb3efbc8ce5b9b6e69995e79ca9e79baee6a087
+    sn: 35
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSpeed: 0
+      Speed: 0
+      TypeFly: 0
+      IsCollisionHit: 0
+      CollisionFinish: 0
+      EmitterWidth: 0
+      BulletNumber: 0
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSingleEffect: 0
+    IsIncessancy: 0
+    EffectMask: 0
+  - sname: e7a6bbe997b4e4b98be8aea1
+    kind: 1
+    sort: 1
+    lv: 1
+    icon: 0
+    target: 2
+    typ: 4
+    area: 10
+    dis: 12
+    tim: 1
+    damage: 64616d2a312e392b313936302b32382a6c76
+    buff_target: 0
+    buff_typ: 0
+    buff: 0
+    chance: 0
+    pro_sn: 0
+    pro_init: 0
+    pro_val: 0
+    mval: 190
+    mg: 0
+    fval: 1960
+    fg: 28
+    info: e5afb9e79baee6a087e980a0e688905b315d2b5b325de4bca4e5aeb3efbc8ce5b9b6e69995e79ca9e79baee6a087
+    sn: 36
+    SelfEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+    FlyEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSpeed: 0
+      Speed: 0
+      TypeFly: 0
+      IsCollisionHit: 0
+      CollisionFinish: 0
+      EmitterWidth: 0
+      BulletNumber: 0
+    TargetEffect:
+      Delayed: 0
+      AutoStop: 0
+      Duration: 0
+      EffectName: 
+      HavHitEffect: 0
+      HitEffectName: 
+      IsSingleEffect: 0
+    IsIncessancy: 0
+    EffectMask: 0

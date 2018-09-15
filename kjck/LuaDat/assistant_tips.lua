@@ -1,0 +1,12 @@
+return{
+{t=1,img="tex_tip_daily",g="WinDaily",i="完成日常可获取大量主城经验",n="日常",sn=1},
+{t=1,img="tex_tip_fb",g="WinFB",i="挑战/扫荡副本可获取主城经验",n="副本",sn=2},
+{t=1,img="tex_tip_quest",g="WinQuest",i="完成主线任务可获取主城经验",n="任务",sn=3},
+{t=1,img="tex_tip_world_map",g="AtkPve",i="通关征战剧情可获取主城经验",n="征战",sn=4},
+{t=1,img="tex_tip_explore",g="WinGroundPalace",i="参加地宫探秘玩法可获取主城经验",n="地宫",sn=5},
+{t=2,img="tex_tip_clanwar",g="WinClanWar",i="挑战乱世争雄可获取顶级套装",n="乱世争雄",sn=6},
+{t=2,img="tex_tip_fb",g="WinFB",i="挑战/扫荡副本可获取高级装备",n="副本",sn=7},
+{t=3,img="tex_tip_home",g="PopHome",i="主城征收可获取大量银币",n="主城征收",sn=8},
+{t=3,img="tex_tip_g2c",g="PopG2C",i="使用金币换取大量银币",n="点石成金",sn=9},
+{t=3,img="tex_tip_fb",g="WinFB",i="挑战/扫荡副本可获取银币",n="副本",sn=10}
+}

@@ -1,0 +1,2832 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32a5cd5bffc74308ae4cbc172a4ffc74, type: 3}
+  m_Name: SkillDatabase
+  m_EditorClassIdentifier: 
+  mDatas:
+  - mSn: 2
+    mSname: 
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: qiangBin
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 0
+        mType: 0
+        mDuration: 0
+        mSpeed: 0
+        mRadius: 1
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 0
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 3
+    mSname: 
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: fiy_jians
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 0
+        mType: 1
+        mDuration: 0
+        mSpeed: 30
+        mRadius: 0
+        mIsParabola: 1
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 1
+      mLocatinData:
+        mShape: 0
+        mDistance: 50
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 1
+        mIsInversion: 0
+  - mSn: 4
+    mSname: 
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: fly_fsshiQius
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: boomb_faShiQiu
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 0
+        mType: 1
+        mDuration: 0
+        mSpeed: 30
+        mRadius: 0
+        mIsParabola: 1
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 1
+      mLocatinData:
+        mShape: 0
+        mDistance: 50
+        mIsFindObject: 1
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 1
+        mIsInversion: 0
+  - mSn: 6
+    mSname: 
+    mBulletEmitterDatas:
+    - mNumber: 3
+      mDelay: 0
+      mDuration: 3
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: skill_6
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: skill_6_end
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 0
+        mType: 0
+        mDuration: 1
+        mSpeed: 20
+        mRadius: 12
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 100
+        mIsFindObject: 1
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 20
+        mMaxTargetNumber: 10
+        mIsInversion: 0
+  - mSn: 7
+    mSname: 
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: skill_7
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 0
+        mType: 0
+        mDuration: 5
+        mSpeed: 30
+        mRadius: 9
+        mIsParabola: 1
+        mHitNumber: 0
+        mIsPiercing: 1
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 50
+        mIsFindObject: 1
+        mIsRandom: 0
+        mAngle: 60
+        mWidth: 10
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 8
+    mSname: 
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: skill_8
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: skill_8_end
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 0
+        mType: 0
+        mDuration: 0
+        mSpeed: 0
+        mRadius: 12
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 0
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 9
+    mSname: 
+    mBulletEmitterDatas:
+    - mNumber: 3
+      mDelay: 0
+      mDuration: 4
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: EmptyEffect
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 0
+        mType: 0
+        mDuration: 0
+        mSpeed: 30
+        mRadius: 12
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 1
+      mLocatinData:
+        mShape: 0
+        mDistance: 30
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 3
+        mIsInversion: 0
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: skill_9_02
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 0
+        mIsFollowing: 0
+        mType: 0
+        mDuration: 0
+        mSpeed: 30
+        mRadius: 0
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 30
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 3
+        mIsInversion: 0
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: skill_9_01
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 0
+        mIsFollowing: 0
+        mType: 0
+        mDuration: 2
+        mSpeed: 30
+        mRadius: 0
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 1
+      mLocatinData:
+        mShape: 0
+        mDistance: 30
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 3
+        mIsInversion: 0
+  - mSn: 10
+    mSname: 
+    mBulletEmitterDatas:
+    - mNumber: 3
+      mDelay: 0
+      mDuration: 4
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: skill_10
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 0
+        mType: 0
+        mDuration: 0
+        mSpeed: 100
+        mRadius: 200
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 100
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 50
+        mMaxTargetNumber: 100
+        mIsInversion: 0
+  - mSn: 11
+    mSname: 
+    mBulletEmitterDatas:
+    - mNumber: 3
+      mDelay: 0
+      mDuration: 4
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: boomb_zhiLiao
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 1
+        mType: 0
+        mDuration: 0
+        mSpeed: 0
+        mRadius: 200
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 0
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 4
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: skill_11
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 0
+        mIsFollowing: 0
+        mType: 0
+        mDuration: 0
+        mSpeed: 0
+        mRadius: 200
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 0
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 12
+    mSname: 
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: boomb_huo
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 1
+        mType: 0
+        mDuration: 0
+        mSpeed: 0
+        mRadius: 15
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 15
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: skill_12
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 0
+        mIsFollowing: 0
+        mType: 0
+        mDuration: 0
+        mSpeed: 0
+        mRadius: 15
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 15
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 13
+    mSname: 
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: skill_13
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 0
+        mType: 0
+        mDuration: 0
+        mSpeed: 0
+        mRadius: 200
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 100
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 10
+        mIsInversion: 0
+  - mSn: 14
+    mSname: 
+    mBulletEmitterDatas:
+    - mNumber: 3
+      mDelay: 0
+      mDuration: 0.75
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: skill_14
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 0
+        mIsFollowing: 0
+        mType: 0
+        mDuration: 0
+        mSpeed: 10000
+        mRadius: 0
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 1
+        mDistance: 12
+        mIsFindObject: 0
+        mIsRandom: 1
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 10
+        mIsInversion: 0
+    - mNumber: 10
+      mDelay: 0
+      mDuration: 0.75
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: skill_14
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 1
+        mType: 0
+        mDuration: 0
+        mSpeed: 10000
+        mRadius: 10
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 5
+        mDistance: 100
+        mIsFindObject: 0
+        mIsRandom: 1
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 10
+        mIsInversion: 0
+  - mSn: 15
+    mSname: 
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: skill_15
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 1
+        mType: 0
+        mDuration: 0
+        mSpeed: 0
+        mRadius: 200
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 100
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 10
+        mIsInversion: 0
+  - mSn: 16
+    mSname: 
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: skill_16
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: boomb_zhiLiao
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 1
+        mType: 0
+        mDuration: 0
+        mSpeed: 30
+        mRadius: 200
+        mIsParabola: 1
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 30
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 10
+        mIsInversion: 0
+  - mSn: 17
+    mSname: 
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: skill_17
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 1
+        mType: 0
+        mDuration: 0
+        mSpeed: 0
+        mRadius: 10
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 10
+        mIsFindObject: 0
+        mIsRandom: 1
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 10
+        mIsInversion: 0
+  - mSn: 18
+    mSname: 
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: skill_18
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 0
+        mType: 0
+        mDuration: 3
+        mSpeed: 0
+        mRadius: 6
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: -14
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 19
+    mSname: 
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 3
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: skill_19
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 1
+        mType: 1
+        mDuration: 0
+        mSpeed: 20
+        mRadius: 0.1
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 1
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 80
+        mIsFindObject: 0
+        mIsRandom: 1
+        mAngle: 0
+        mWidth: 16
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 20
+    mSname: "20\u5F20\u90C3\u6B8A\u6B7B\u4E00\u640F"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 1
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: skill_20
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 1
+        mType: 1
+        mDuration: 5
+        mSpeed: 30
+        mRadius: 100
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 0
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 21
+    mSname: "21\u590F\u4FAF\u6E0A\u5206\u88C2\u7BAD"
+    mBulletEmitterDatas:
+    - mNumber: 5
+      mDelay: 0
+      mDuration: 0.5
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: skill_21_01
+        mBoomEffectName: skill_21_end
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 0
+        mType: 1
+        mDuration: 3
+        mSpeed: 60
+        mRadius: 100
+        mIsParabola: 1
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 5
+        mDistance: 10
+        mIsFindObject: 1
+        mIsRandom: 1
+        mAngle: 0
+        mWidth: 5
+        mMaxTargetNumber: 5
+        mIsInversion: 0
+    - mNumber: 5
+      mDelay: 0
+      mDuration: 0.5
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: skill_21_01
+        mBoomEffectName: skill_21_end
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 0
+        mIsFollowing: 0
+        mType: 1
+        mDuration: 3
+        mSpeed: 60
+        mRadius: 100
+        mIsParabola: 1
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 1
+        mDistance: 10
+        mIsFindObject: 1
+        mIsRandom: 1
+        mAngle: 0
+        mWidth: 5
+        mMaxTargetNumber: 5
+        mIsInversion: 0
+  - mSn: 22
+    mSname: "22\u5F20\u98DE\u5F53\u9633\u864E\u5578"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 2
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: skill_22
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 0
+        mIsFollowing: 0
+        mType: 0
+        mDuration: 0
+        mSpeed: 0
+        mRadius: 100
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 0
+        mIsFindObject: 1
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 23
+    mSname: "23\u9EC4\u5FE0\u70C8\u706B\u7BAD"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: skill_23_01
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 0
+        mIsFollowing: 1
+        mType: 1
+        mDuration: 0
+        mSpeed: 100
+        mRadius: 6
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 4
+        mDistance: 30
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 6
+        mMaxTargetNumber: 0
+        mIsInversion: 1
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: skill_23_02
+        mBoomEffectName: skill_23_end
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 0
+        mIsFollowing: 1
+        mType: 1
+        mDuration: 0
+        mSpeed: 100
+        mRadius: 6
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 4
+        mDistance: 30
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 6
+        mMaxTargetNumber: 0
+        mIsInversion: 1
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 0
+        mType: 0
+        mDuration: 0
+        mSpeed: 100
+        mRadius: 6
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 60
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 6
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 24
+    mSname: "\u706B\u795E\u7834"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: skill_24
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 0
+        mType: 1
+        mDuration: 0
+        mSpeed: 100
+        mRadius: 0
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 0
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 25
+    mSname: "25\u795D\u878D\u706B\u795E\u7834"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: skill_25
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 0
+        mType: 1
+        mDuration: 5
+        mSpeed: 100
+        mRadius: 100
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 0
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 26
+    mSname: "\u9738\u738B\u5203\u5251"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: skill_26
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 0
+        mType: 1
+        mDuration: 0
+        mSpeed: 100
+        mRadius: 0
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 0
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 27
+    mSname: "27\u5415\u8499\u6708\u7259\u621F"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: skill_27_01
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 0
+        mType: 3
+        mDuration: 0
+        mSpeed: 50
+        mRadius: 6
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 1
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 2
+        mDistance: 60
+        mIsFindObject: 1
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 6
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: skill_27_02
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 0
+        mIsFollowing: 0
+        mType: 3
+        mDuration: 0
+        mSpeed: 50
+        mRadius: 6
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 1
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 2
+        mDistance: 60
+        mIsFindObject: 1
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 6
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 28
+    mSname: "\u5F3A\u5175\u76DB\u52BF"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: skill_28
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 0
+        mType: 0
+        mDuration: 0
+        mSpeed: 0
+        mRadius: 8
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 0
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 29
+    mSname: "\u8840\u6E85\u9EC4\u6C99"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: skill_29
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: skill_29_end
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 0
+        mType: 3
+        mDuration: 0
+        mSpeed: 50
+        mRadius: 6
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 1
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 2
+        mDistance: 60
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 6
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+    - mNumber: 2
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0.3
+        mEffectName: skill_29
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 0
+        mIsFollowing: 0
+        mType: 3
+        mDuration: 0
+        mSpeed: 50
+        mRadius: 6
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 1
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 2
+        mDistance: 60
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 6
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 30
+    mSname: "30\u5F20\u89D2\u592A\u5E73\u8981\u672F"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: skill_30
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 0
+        mIsFollowing: 0
+        mType: 0
+        mDuration: 0
+        mSpeed: 50
+        mRadius: 0
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 0
+        mIsFindObject: 1
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: boomb_zhiliao
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 1
+        mType: 0
+        mDuration: 0
+        mSpeed: 50
+        mRadius: 100
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 0
+        mIsFindObject: 1
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 31
+    mSname: "31\u6587\u4E11\u82CD\u72FC\u5578"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: skill_31_01
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 0
+        mIsFollowing: 0
+        mType: 3
+        mDuration: 5
+        mSpeed: 50
+        mRadius: 6
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 1
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 2
+        mDistance: 60
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 6
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: skill_31_02
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 0
+        mIsFollowing: 0
+        mType: 3
+        mDuration: 5
+        mSpeed: 50
+        mRadius: 6
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 1
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 2
+        mDistance: 60
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 6
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 32
+    mSname: "32\u66F9\u64CD\u5B81\u8D1F\u5929\u4E0B"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: skill_32
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 0
+        mIsFollowing: 0
+        mType: 0
+        mDuration: 0
+        mSpeed: 100
+        mRadius: 100
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 0
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 33
+    mSname: "33\u5218\u5907\u5E7F\u7EB3\u767E\u5DDD"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: skill_33
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 1
+        mType: 1
+        mDuration: 5
+        mSpeed: 100
+        mRadius: 100
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 0
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 34
+    mSname: "34\u5B59\u6743\u5236\u8861"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: skill_34
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 0
+        mType: 0
+        mDuration: 3
+        mSpeed: 100
+        mRadius: 7
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 0
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 35
+    mSname: "35\u8463\u5353\u4E71\u77F3\u7A7F\u7A7A"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 30
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: skill_35
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 0
+        mType: 0
+        mDuration: 3
+        mSpeed: 0
+        mRadius: 100
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 100
+        mIsFindObject: 0
+        mIsRandom: 1
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 5
+        mIsInversion: 0
+  - mSn: 36
+    mSname: "\u788E\u51FB"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: skill_36
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 0
+        mIsFollowing: 0
+        mType: 0
+        mDuration: 3
+        mSpeed: 0
+        mRadius: 7
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 0
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 37
+    mSname: "skill_37\u66F9\u4EC1\u91CD\u51FB"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: skill_37
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 1
+        mType: 1
+        mDuration: 3
+        mSpeed: 100
+        mRadius: 100
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 0
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 38
+    mSname: "skill_38\u5F90\u6643\u5DE8\u65A7\u65A9"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: skill_38
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 0
+        mType: 0
+        mDuration: 3
+        mSpeed: 0
+        mRadius: 7
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 0
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 39
+    mSname: "skill_39\u971C\u51BB\u7BAD\u6C14"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: skill_39_01
+        mBoomEffectName: skill_39_end
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 0
+        mIsFollowing: 1
+        mType: 1
+        mDuration: 0
+        mSpeed: 120
+        mRadius: 100
+        mIsParabola: 1
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 4
+        mDistance: 50
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 1
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: skill_39_02
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 0
+        mIsFollowing: 1
+        mType: 1
+        mDuration: 0
+        mSpeed: 120
+        mRadius: 100
+        mIsParabola: 1
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 4
+        mDistance: 50
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 1
+  - mSn: 40
+    mSname: "skill_40\u4E50\u8FDB\u94A9\u9570\u67AA"
+    mBulletEmitterDatas:
+    - mNumber: 6
+      mDelay: 0
+      mDuration: 1.25
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: skill_40
+        mBoomEffectName: skill_40_end
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 0
+        mIsFollowing: 1
+        mType: 1
+        mDuration: 0
+        mSpeed: 100
+        mRadius: 0.1
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 4
+        mDistance: 15
+        mIsFindObject: 0
+        mIsRandom: 1
+        mAngle: 60
+        mWidth: 0
+        mMaxTargetNumber: 6
+        mIsInversion: 1
+    - mNumber: 3
+      mDelay: 0
+      mDuration: 0.55
+      mBulletDatas:
+      - mDelay: 0.7
+        mEffectName: skill_40
+        mBoomEffectName: skill_40_end
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 0
+        mIsFollowing: 1
+        mType: 1
+        mDuration: 0
+        mSpeed: 100
+        mRadius: 0.1
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 4
+        mDistance: 15
+        mIsFindObject: 0
+        mIsRandom: 1
+        mAngle: 60
+        mWidth: 0
+        mMaxTargetNumber: 6
+        mIsInversion: 1
+    - mNumber: 3
+      mDelay: 0
+      mDuration: 0.55
+      mBulletDatas:
+      - mDelay: 0.5
+        mEffectName: EmptyEffect
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 1
+        mType: 1
+        mDuration: 0
+        mSpeed: 100
+        mRadius: 0.1
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 15
+        mIsFindObject: 0
+        mIsRandom: 1
+        mAngle: 60
+        mWidth: 0
+        mMaxTargetNumber: 6
+        mIsInversion: 0
+  - mSn: 41
+    mSname: "skill_41\u9B4F\u5EF6\u6A2A\u51B2\u76F4\u649E"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: skill_41
+        mBoomDirection: 1
+        mHitEffectName: 
+        mHitDirection: 1
+        mIsHavHit: 1
+        mIsFollowing: 1
+        mType: 1
+        mDuration: 2
+        mSpeed: 100
+        mRadius: 0
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 0
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0.5
+        mEffectName: 
+        mBoomEffectName: skill_41_end
+        mBoomDirection: 1
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 0
+        mIsFollowing: 1
+        mType: 1
+        mDuration: 2
+        mSpeed: 100
+        mRadius: 0
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 0
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 42
+    mSname: "skill_42\u5B5F\u83B7\u91CE\u86EE\u98DE\u65A7"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 1
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: skill_42
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 0
+        mIsFollowing: 0
+        mType: 3
+        mDuration: 1
+        mSpeed: 100
+        mRadius: 6
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 1
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 2
+        mDistance: 12
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 6
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 43
+    mSname: "skill_43\u6C89\u9ED8"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: skill_43
+        mBoomDirection: 0
+        mHitEffectName: skill_43_end
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 0
+        mType: 0
+        mDuration: 3
+        mSpeed: 0
+        mRadius: 100
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 100
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 5
+        mIsInversion: 0
+  - mSn: 44
+    mSname: "skill_44\u51B0\u971C\u7981\u9522"
+    mBulletEmitterDatas:
+    - mNumber: 3
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: skill_44
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 1
+        mType: 1
+        mDuration: 0
+        mSpeed: 100
+        mRadius: 100
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 100
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 1
+        mIsInversion: 0
+  - mSn: 45
+    mSname: "skill_45\u7A0B\u666E\u6295\u63B7\u4E4B\u77DB"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: skill_45
+        mBoomEffectName: skill_45_end
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 0
+        mIsFollowing: 1
+        mType: 1
+        mDuration: 0
+        mSpeed: 100
+        mRadius: 6
+        mIsParabola: 1
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 4
+        mDistance: 30
+        mIsFindObject: 1
+        mIsRandom: 1
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 1
+        mIsInversion: 1
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 1
+        mType: 1
+        mDuration: 0
+        mSpeed: 100
+        mRadius: 6
+        mIsParabola: 1
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 30
+        mIsFindObject: 1
+        mIsRandom: 1
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 1
+        mIsInversion: 0
+  - mSn: 46
+    mSname: "skill_46\u7518\u5B81\u9738\u6D77\u4E00\u51FB"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: skill_46
+        mHitDirection: 1
+        mIsHavHit: 1
+        mIsFollowing: 1
+        mType: 1
+        mDuration: 0
+        mSpeed: 100
+        mRadius: 0
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 0
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 47
+    mSname: "\u79BB\u95F4\u4E4B\u8BA1"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 3
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: skill_47
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 0
+        mIsFollowing: 1
+        mType: 0
+        mDuration: 3
+        mSpeed: 200
+        mRadius: 10
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 12
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 6
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+    - mNumber: 1
+      mDelay: 1
+      mDuration: 1
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: EmptyEffect
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 1
+        mType: 0
+        mDuration: 3
+        mSpeed: 200
+        mRadius: 10
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 12
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 6
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 48
+    mSname: "skill_48\u9AD8\u987A\u9677\u9635\u51B2\u950B"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: skill_48_01
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 0
+        mIsFollowing: 0
+        mType: 3
+        mDuration: 0
+        mSpeed: 30
+        mRadius: 6
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 1
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 2
+        mDistance: 12
+        mIsFindObject: 1
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 6
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: skill_48_02
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 0
+        mIsFollowing: 0
+        mType: 3
+        mDuration: 0
+        mSpeed: 30
+        mRadius: 6
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 1
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 2
+        mDistance: 12
+        mIsFindObject: 1
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 6
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: EmptyEffect
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: skill_48_end
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 0
+        mType: 3
+        mDuration: 0
+        mSpeed: 30
+        mRadius: 6
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 1
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 2
+        mDistance: 12
+        mIsFindObject: 1
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 6
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 49
+    mSname: "skill_49\u53F7\u4EE4\u7FA4\u96C4"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: skill_49
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: skill_49_end
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 0
+        mType: 0
+        mDuration: 3
+        mSpeed: 0
+        mRadius: 100
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 100
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 5
+        mIsInversion: 0
+  - mSn: 50
+    mSname: "\u6D1B\u795E\u8D4B"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: skill_50
+        mBoomDirection: 0
+        mHitEffectName: boomb_zhiLiao
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 1
+        mType: 0
+        mDuration: 3
+        mSpeed: 0
+        mRadius: 100
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 0
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 51
+    mSname: "skill_51\u9A91\u5175\u7A81\u51FB"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: EmptyEffect
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 0
+        mType: 1
+        mDuration: 3
+        mSpeed: 30
+        mRadius: 100
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 30
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 360
+        mWidth: 0
+        mMaxTargetNumber: 1
+        mIsInversion: 0
+    - mNumber: 4
+      mDelay: 0
+      mDuration: 0.7
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: skill_51
+        mBoomDirection: 1
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 0
+        mIsFollowing: 0
+        mType: 1
+        mDuration: 3
+        mSpeed: 100
+        mRadius: 100
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 4
+        mDistance: 30
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 360
+        mWidth: 0
+        mMaxTargetNumber: 1
+        mIsInversion: 1
+  - mSn: 52
+    mSname: "\u6D41\u661F\u9524"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: skill_52
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 0
+        mIsFollowing: 0
+        mType: 1
+        mDuration: 0
+        mSpeed: 100
+        mRadius: 6
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 12
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0.7
+        mEffectName: 
+        mBoomEffectName: EmptyEffect
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 0
+        mType: 1
+        mDuration: 0
+        mSpeed: 100
+        mRadius: 6
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 12
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 53
+    mSname: "skill_53\u98CE\u706B\u8F6E"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: skill_53_01
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: skill_53_end
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 0
+        mType: 3
+        mDuration: 0
+        mSpeed: 20
+        mRadius: 6
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 1
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 1
+      mLocatinData:
+        mShape: 2
+        mDistance: 12
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 6
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: skill_53_02
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 0
+        mIsFollowing: 0
+        mType: 3
+        mDuration: 0
+        mSpeed: 20
+        mRadius: 6
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 1
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 1
+      mLocatinData:
+        mShape: 2
+        mDistance: 12
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 6
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 54
+    mSname: "skill_54\u97AD\u7B1E"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: skill_54
+        mBoomDirection: 1
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 0
+        mIsFollowing: 1
+        mType: 1
+        mDuration: 5
+        mSpeed: 100
+        mRadius: 0
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 0
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 1
+        mEffectName: EmptyEffect
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 0
+        mType: 1
+        mDuration: 5
+        mSpeed: 100
+        mRadius: 0
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 0
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 55
+    mSname: "skill_55\u4E0D\u53EF\u4FB5\u72AF"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 5
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: skill_55
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 1
+        mType: 0
+        mDuration: 2
+        mSpeed: 100
+        mRadius: 1
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 1
+      mLocatinData:
+        mShape: 0
+        mDistance: 100
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 1
+        mIsInversion: 0
+  - mSn: 56
+    mSname: "skill_56\u534E\u96C4\u558B\u8840\u594B\u6218"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 5
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: skill_56
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 1
+        mType: 0
+        mDuration: 5
+        mSpeed: 100
+        mRadius: 1
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 1
+      mLocatinData:
+        mShape: 0
+        mDistance: 0
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 57
+    mSname: "skill_57\u5F90\u76DB\u6A2A\u626B"
+    mBulletEmitterDatas:
+    - mNumber: 3
+      mDelay: 0
+      mDuration: 4
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: skill_57
+        mBoomDirection: 0
+        mHitEffectName: skill_57_end
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 0
+        mType: 0
+        mDuration: 5
+        mSpeed: 0
+        mRadius: 7
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 0
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 58
+    mSname: "skill_58\u5F20\u662D\u91D1\u5149\u95EA"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: skill_58
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 1
+        mType: 0
+        mDuration: 5
+        mSpeed: 100
+        mRadius: 1
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 0
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 59
+    mSname: "skill_59\u97E9\u9042\u51B3\u6B7B\u51B2\u950B"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: skill_59
+        mBoomDirection: 1
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 1
+        mType: 0
+        mDuration: 2
+        mSpeed: 100
+        mRadius: 1
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 0
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 60
+    mSname: "skill_60\u5B89\u8425"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: skill_60
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 0
+        mIsFollowing: 1
+        mType: 1
+        mDuration: 5
+        mSpeed: 100
+        mRadius: 1
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 0
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0.7
+        mEffectName: 
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: boomb_zhiLiao
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 1
+        mType: 1
+        mDuration: 5
+        mSpeed: 100
+        mRadius: 1
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 0
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 61
+    mSname: "\u540D\u58EB\u4E00\u51FB"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: 
+        mBoomDirection: 0
+        mHitEffectName: skill_61
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 1
+        mType: 0
+        mDuration: 3
+        mSpeed: 100
+        mRadius: 7
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 0
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 62
+    mSname: "skill_62\u8521\u6587\u59EC\u79BB\u6068\u6B4C"
+    mBulletEmitterDatas:
+    - mNumber: 1
+      mDelay: 0
+      mDuration: 0
+      mBulletDatas:
+      - mDelay: 0
+        mEffectName: 
+        mBoomEffectName: skill_62
+        mBoomDirection: 0
+        mHitEffectName: 
+        mHitDirection: 0
+        mIsHavHit: 1
+        mIsFollowing: 0
+        mType: 0
+        mDuration: 5
+        mSpeed: 0
+        mRadius: 7
+        mIsParabola: 0
+        mHitNumber: 0
+        mIsPiercing: 0
+        mIsAgainHit: 0
+        mBounces: 0
+        mIsImmediatelyStopEffect: 0
+      mLocatinData:
+        mShape: 0
+        mDistance: 0
+        mIsFindObject: 0
+        mIsRandom: 0
+        mAngle: 0
+        mWidth: 0
+        mMaxTargetNumber: 0
+        mIsInversion: 0
+  - mSn: 3001
+    mSname: 
+    mBulletEmitterDatas: []
