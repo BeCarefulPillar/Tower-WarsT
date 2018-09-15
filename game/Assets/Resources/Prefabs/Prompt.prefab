@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 22248774}
   - component: {fileID: 11406872}
   - component: {fileID: 11429404}
+  - component: {fileID: 114133978984553344}
   m_Layer: 5
   m_Name: Open
   m_TagString: Untagged
@@ -708,6 +709,21 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100012}
   m_IsPrefabParent: 1
+--- !u!114 &114133978984553344
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ec5aa7d79b2a1548a965df7f3b88f64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  luaContainer: {fileID: 114981935600404846}
+  mTransferSelf: 0
+  mTransferPos: 0
+  mOnClick: OnClickOpen
 --- !u!114 &114678032120634138
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -724,6 +740,8 @@ MonoBehaviour:
     o: {fileID: 100004, guid: 6977364229261084aa212003c00fc930, type: 2}
   - name: grid
     o: {fileID: 22494216}
+  - name: open
+    o: {fileID: 114133978984553344}
   objs: []
 --- !u!114 &114981935600404846
 MonoBehaviour:

@@ -66,7 +66,7 @@ using LuaInterface;
         /// </summary>
         /// <param name="name"></param>
         public void ClosePanel(string name) {
-            var panelName = name + "Panel";
+            var panelName = name;
             var panelObj = Parent.FindChild(panelName);
             if (panelObj == null) return;
             Destroy(panelObj.gameObject);

@@ -7,6 +7,7 @@ function _w.OnLoad(c)
     _body = c
     _ui = c:GetComponent(typeof(SerializeRef)).ref
     print(tts(_ui))
+    print(tts(_w))
     
     local count = 20
 
@@ -21,6 +22,8 @@ function _w.OnLoad(c)
         go:GetComponent(typeof(LuaButton)).param = {1,2,3}
     end
 
+    _ui.open.luaContainer = _body
+
     print(_w.initObj.str)
     print(PanelNames)
 end
@@ -29,6 +32,10 @@ function _w.OnClick(btn,pos,p)
     print(tostring(btn))
     print(tostring(pos))
     print(tts(p))
+end
+
+function _w.OnClickOpen()
+    Win.Open("Message")
 end
 
 function _w.OnUnLoad(c)
