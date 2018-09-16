@@ -39,7 +39,7 @@ function tts(tab,c)
             end
         else
             for k, v in pairs(tab) do
-                if type(v) == "table" then
+                if type(v) == "table" and k~="__index" then
                     str = str .. string.rep(rep, c) .. tostring(k) .. eq .. tts(v, c + 1) .. cat
                 else
                     str = str .. string.rep(rep, c) .. tostring(k) .. eq .. tostring(v) .. cat

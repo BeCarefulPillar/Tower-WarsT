@@ -10,7 +10,7 @@ function Win.Open(nm, arg)
     local tmp = _G[nm]
     if not tmp then
     print(nm)
-        require(nm)
+        require("Game/" .. nm)
         tmp = _G[nm]
         print(tmp)
         assert(tmp,"窗口"..nm.."不存在")

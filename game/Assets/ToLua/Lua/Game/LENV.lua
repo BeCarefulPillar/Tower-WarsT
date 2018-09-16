@@ -5,5 +5,7 @@ Destroy = UnityEngine.Object.Destroy
 Text = UnityEngine.UI.Text
 
 json = require "cjson"
-require "extend"
-require "Win"
+require "Game/extend"
+require "Game/Win"
+require "Game/class"
+require "Game/Student"
