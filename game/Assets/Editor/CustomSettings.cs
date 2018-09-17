@@ -166,6 +166,7 @@ public static class CustomSettings
 
         _GT(typeof(LuaContainer)),
         _GT(typeof(LuaButton)),
+        _GT(typeof(Game)),
 
         _GT(typeof(GameManager)),
         _GT(typeof(LuaManager)),

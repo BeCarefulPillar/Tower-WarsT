@@ -2,7 +2,7 @@
 using System.Collections;
 using LuaInterface;
 
-public class LuaManager : Manager
+public class LuaManager : MonoBehaviour, IManager
 {
     private LuaState lua;
     private LuaLoader loader;

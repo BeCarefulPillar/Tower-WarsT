@@ -4,7 +4,8 @@ using System.Collections;
 using System.Collections.Generic;
 using LuaInterface;
 
-    public class NetworkManager : Manager {
+    public class NetworkManager : MonoBehaviour, IManager
+{
         private SocketClient socket;
         static readonly object m_lockObject = new object();
         static Queue<KeyValuePair<int, ByteBuffer>> mEvents = new Queue<KeyValuePair<int, ByteBuffer>>();
@@ -54,7 +55,7 @@ using LuaInterface;
             if (mEvents.Count > 0) {
                 while (mEvents.Count > 0) {
                     KeyValuePair<int, ByteBuffer> _event = mEvents.Dequeue();
-                    facade.SendMessageCommand(NotiConst.DISPATCH_MESSAGE, _event);
+                    //facade.SendMessageCommand(NotiConst.DISPATCH_MESSAGE, _event);
                 }
             }
         }

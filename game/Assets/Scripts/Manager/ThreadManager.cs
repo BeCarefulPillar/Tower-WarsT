@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Diagnostics;
 using System.Net;
+using UnityEngine;
 using System;
 
 public class ThreadEvent {
@@ -24,7 +25,8 @@ public class NotiData {
     /// <summary>
     /// 当前线程管理器，同时只能做一个任务
     /// </summary>
-    public class ThreadManager : Manager {
+    public class ThreadManager : MonoBehaviour, IManager
+{
         private Thread thread;
         private Action<NotiData> func;
         private Stopwatch sw = new Stopwatch();
@@ -62,7 +64,7 @@ public class NotiData {
         /// <param name="state"></param>
         private void OnSyncEvent(NotiData data) {
             if (this.func != null) func(data);  //回调逻辑层
-            facade.SendMessageCommand(data.evName, data.evParam); //通知View层
+            //facade.SendMessageCommand(data.evName, data.evParam); //通知View层
         }
 
         // Update is called once per frame

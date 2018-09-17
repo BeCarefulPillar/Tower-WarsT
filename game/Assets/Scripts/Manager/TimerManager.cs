@@ -17,7 +17,8 @@ using System.Collections.Generic;
     }
 
 
-    public class TimerManager : Manager {
+    public class TimerManager : MonoBehaviour, IManager
+{
         private float interval = 0;
         private List<TimerInfo> objects = new List<TimerInfo>();
 

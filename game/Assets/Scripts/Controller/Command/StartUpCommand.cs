@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class StartUpCommand : ControllerCommand {
+public class StartUpCommand : ICommand {
 
-    public override void Execute(IMessage message) {
+    public void Execute(IMessage message) {
         if (!Util.CheckEnvironment()) return;
 
         GameObject gameMgr = GameObject.Find("GlobalGenerator");

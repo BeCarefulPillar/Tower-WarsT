@@ -5,9 +5,8 @@ local _ui = nil
 
 function _w.OnLoad(c)
     _body = c
+    print(typeof(SerializeRef))
     _ui = c:GetComponent(typeof(SerializeRef)).ref
-    print(tts(_ui))
-    print(tts(_w))
     
     local count = 20
 
@@ -17,7 +16,7 @@ function _w.OnLoad(c)
         go.transform:SetParent(_ui.grid)
         go.transform.localScale = Vector3.one
         go.transform.localPosition = Vector3.zero
-        go.transform:Find("Text"):GetComponent(typeof(Text)).text = tostring(i)
+        go.transform:Find("Text"):GetComponent("Text").text = tostring(i)
         go:GetComponent(typeof(LuaButton)).luaContainer = _body
         go:GetComponent(typeof(LuaButton)).param = {1,2,3}
     end

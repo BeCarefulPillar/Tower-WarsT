@@ -4,3 +4,6 @@ Library
 Temp
 *.csproj
 *.sln
+*.suo
+*.config
+*.config.meta

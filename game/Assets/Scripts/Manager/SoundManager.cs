@@ -2,7 +2,8 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-    public class SoundManager : Manager {
+    public class SoundManager : MonoBehaviour, IManager
+{
         private AudioSource audio;
         private Hashtable sounds = new Hashtable();
 

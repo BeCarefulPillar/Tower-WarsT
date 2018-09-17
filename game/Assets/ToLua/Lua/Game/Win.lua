@@ -1,5 +1,5 @@
 local _G = _G
-local _panelMgr = LuaHelper.GetPanelManager()
+local _panelMgr = Game.Ins.PanelMgr
 
 Win = {}
 
@@ -9,7 +9,6 @@ local _wins = {}
 function Win.Open(nm, arg)
     local tmp = _G[nm]
     if not tmp then
-    print(nm)
         require("Game/" .. nm)
         tmp = _G[nm]
         print(tmp)

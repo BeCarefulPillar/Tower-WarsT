@@ -246,7 +246,8 @@ using System.IO;
 using LuaInterface;
 using UObject = UnityEngine.Object;
 
-    public class ResourceManager : Manager {
+    public class ResourceManager : MonoBehaviour, IManager
+{
         private string[] m_Variants = { };
         private AssetBundleManifest manifest;
         private AssetBundle shared, assetbundle;

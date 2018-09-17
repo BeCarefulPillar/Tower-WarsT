@@ -9,15 +9,16 @@ using UnityEngine;
 /// <summary>
 /// 事件命令
 /// </summary>
-public class ControllerCommand : ICommand {
-    public virtual void Execute(IMessage message) {
-    }
-}
+//public class ControllerCommand : ICommand {
+//    public virtual void Execute(IMessage message) {
+//    }
+//}
 
-public class Facade {
+public class AppFacade {
     protected IController m_controller;
     static GameObject m_GameManager;
     static Dictionary<string, object> m_Managers = new Dictionary<string, object>();
+    private static AppFacade _instance;
 
     GameObject AppGameManager {
         get {
@@ -28,8 +29,21 @@ public class Facade {
         }
     }
 
-    protected Facade() {
+    public static AppFacade Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = new AppFacade();
+            }
+            return _instance;
+        }
+    }
+
+    protected AppFacade() {
         InitFramework();
+        RegisterCommand(NotiConst.START_UP, typeof(StartUpCommand));
     }
     protected virtual void InitFramework() {
         if (m_controller != null) return;
@@ -115,5 +129,11 @@ public class Facade {
             GameObject.Destroy((Component)manager);
         }
         m_Managers.Remove(typeName);
+    }
+
+    public void StartUp()
+    {
+        SendMessageCommand(NotiConst.START_UP);
+        RemoveMultiCommand(NotiConst.START_UP);
     }
 }

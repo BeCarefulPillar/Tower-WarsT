@@ -7,7 +7,7 @@ using System.Reflection;
 using System.IO;
 
 
-public class GameManager : Manager
+public class GameManager : MonoBehaviour, IManager
 {
     protected static bool initialize = false;
     private List<string> downloadFiles = new List<string>();
@@ -86,7 +86,7 @@ public class GameManager : Manager
 
             message = "正在解包文件:>" + fs[0];
             Debug.Log("正在解包文件:>" + infile);
-            facade.SendMessageCommand(NotiConst.UPDATE_MESSAGE, message);
+            //facade.SendMessageCommand(NotiConst.UPDATE_MESSAGE, message);
 
             string dir = Path.GetDirectoryName(outfile);
             if (!Directory.Exists(dir)) Directory.CreateDirectory(dir);
@@ -113,7 +113,7 @@ public class GameManager : Manager
             yield return new WaitForEndOfFrame();
         }
         message = "解包完成!!!";
-        facade.SendMessageCommand(NotiConst.UPDATE_MESSAGE, message);
+        //facade.SendMessageCommand(NotiConst.UPDATE_MESSAGE, message);
         yield return new WaitForSeconds(0.1f);
 
         message = string.Empty;
@@ -176,7 +176,7 @@ public class GameManager : Manager
             {   //本地缺少文件
                 Debug.Log(fileUrl);
                 message = "downloading>>" + fileUrl;
-                facade.SendMessageCommand(NotiConst.UPDATE_MESSAGE, message);
+                //facade.SendMessageCommand(NotiConst.UPDATE_MESSAGE, message);
                 /*
                 www = new WWW(fileUrl); yield return www;
                 if (www.error != null) {
@@ -193,7 +193,7 @@ public class GameManager : Manager
         yield return new WaitForEndOfFrame();
 
         message = "更新完成!!";
-        facade.SendMessageCommand(NotiConst.UPDATE_MESSAGE, message);
+        //facade.SendMessageCommand(NotiConst.UPDATE_MESSAGE, message);
 
         OnResourceInited();
     }
@@ -201,7 +201,7 @@ public class GameManager : Manager
     void OnUpdateFailed(string file)
     {
         string message = "更新失败!>" + file;
-        facade.SendMessageCommand(NotiConst.UPDATE_MESSAGE, message);
+        //facade.SendMessageCommand(NotiConst.UPDATE_MESSAGE, message);
     }
 
     /// <summary>
@@ -222,7 +222,7 @@ public class GameManager : Manager
         ThreadEvent ev = new ThreadEvent();
         ev.Key = NotiConst.UPDATE_DOWNLOAD;
         ev.evParams.AddRange(param);
-        ThreadManager.AddEvent(ev, OnThreadCompleted);   //线程下载
+        Game.Ins.ThreadMgr.AddEvent(ev, OnThreadCompleted);   //线程下载
     }
 
     /// <summary>
@@ -253,14 +253,15 @@ public class GameManager : Manager
                 this.OnInitialize();
             });
 #else
-        ResManager.Initialize();
+        //ResManager.Initialize();
+        Game.Ins.ResourceMgr.Initialize();
         this.OnInitialize();
 #endif
     }
 
     void OnInitialize()
     {
-        LuaManager.InitStart();
+        Game.Ins.LuaMgr.InitStart();
         //LuaManager.DoFile("Logic/Game");         //加载游戏
         //LuaManager.DoFile("Logic/Network");      //加载网络
         //NetManager.OnInit();                     //初始化网络
@@ -321,13 +322,13 @@ public class GameManager : Manager
     /// </summary>
     void OnDestroy()
     {
-        if (NetManager != null)
+        if (Game.Ins.NetworkMgr != null)
         {
-            NetManager.Unload();
+            Game.Ins.NetworkMgr.Unload();
         }
-        if (LuaManager != null)
+        if (Game.Ins.LuaMgr != null)
         {
-            LuaManager.Close();
+            Game.Ins.LuaMgr.Close();
         }
 
     }

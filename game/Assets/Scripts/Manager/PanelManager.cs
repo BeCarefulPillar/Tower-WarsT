@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using LuaInterface;
 
-    public class PanelManager : Manager {
+    public class PanelManager : MonoBehaviour, IManager
+{
         private Transform parent;
 
         Transform Parent {

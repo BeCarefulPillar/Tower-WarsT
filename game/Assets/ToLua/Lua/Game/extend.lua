@@ -21,6 +21,34 @@ local function isArray(tab)
     return true
 end
 
+function isNumber(arg)
+    return type(arg) == "number"
+end
+
+function isBoolean(arg)
+    return type(arg) == "boolean"
+end
+
+function isString(arg)
+    return type(arg) == "string"
+end
+
+function isFunction(arg)
+    return type(arg) == "function"
+end
+
+function isTable(arg)
+    return type(arg) == "table"
+end
+
+function isUserdata(arg)
+    return type(arg) == "userdata"
+end
+
+function isThread(arg)
+    return type(arg) == "thread"
+end
+
 ---<summary>table to string</summary>
 function tts(tab,c)
     c = c or 1
@@ -51,4 +79,12 @@ function tts(tab,c)
         str = tostring(tab)
     end
     return str
+end
+
+function string.isEmpty(str)
+    return isString(str) and str==""
+end
+
+function string.notEmpty(str)
+    return isString(str) and str~=""
 end

@@ -10,8 +10,7 @@ public class LuaContainer : MonoBehaviour
     private readonly string FUNC_ONUNLOAD = "OnUnLoad";
     private void Awake()
     {
-        LuaManager m = AppFacade.Instance.GetManager<LuaManager>(ManagerName.Lua);
-        mLua = m.GetLuaState().GetTable(mScriptName, false);
+        mLua = Game.Ins.LuaMgr.GetLuaState().GetTable(mScriptName, false);
         if (mLua == null)
         {
             Debug.LogError(name + "LuaContainer error!!!");

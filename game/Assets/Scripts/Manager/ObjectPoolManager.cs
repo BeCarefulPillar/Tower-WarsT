@@ -6,7 +6,8 @@ using UnityEngine.Events;
     /// <summary>
     /// 对象池管理器，分普通类对象池+资源游戏对象池
     /// </summary>
-    public class ObjectPoolManager : Manager {
+    public class ObjectPoolManager : MonoBehaviour, IManager
+{
         private Transform m_PoolRootObject = null;
         private Dictionary<string, object> m_ObjectPools = new Dictionary<string, object>();
         private Dictionary<string, GameObjectPool> m_GameObjectPools = new Dictionary<string, GameObjectPool>();

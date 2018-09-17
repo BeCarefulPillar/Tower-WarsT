@@ -13,7 +13,9 @@ function Main()
     --测试class
     local a = Student:new({nm="aa",age=16})
     local b = Student:new({nm="bb",age=17})
-    local g= GoodStudent:new({nm="xx",age=18,func=0000})
+    local g= GoodStudent:new({nm="xx",age=18,func=2222})
+
+    local o = object:new()
 
     --参数1,2是否是相同类型
     print(objis(a,b))
@@ -27,6 +29,7 @@ function Main()
     print(objsub(g,g))
 
     a:show()
+    a.base:tostring()
     b:show()
     g:show()
 

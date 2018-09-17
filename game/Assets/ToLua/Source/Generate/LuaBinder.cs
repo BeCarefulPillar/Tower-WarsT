@@ -18,9 +18,8 @@ public static class LuaBinder
 		LuaBehaviourWrap.Register(L);
 		LuaContainerWrap.Register(L);
 		LuaButtonWrap.Register(L);
-
+		GameWrap.Register(L);
         SerializeRef.Register(L);
-
 		GameManagerWrap.Register(L);
 		LuaManagerWrap.Register(L);
 		PanelManagerWrap.Register(L);
