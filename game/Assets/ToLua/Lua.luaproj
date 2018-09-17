@@ -25,6 +25,7 @@
     <Folder Include="Lua\" />
     <Folder Include="Lua\cjson\" />
     <Folder Include="Lua\Game\" />
+    <Folder Include="Lua\Game\map\" />
     <Folder Include="Lua\jit\" />
     <Folder Include="Lua\lpeg\" />
     <Folder Include="Lua\misc\" />
@@ -41,6 +42,7 @@
     <Compile Include="Lua\Game\class.lua" />
     <Compile Include="Lua\Game\extend.lua" />
     <Compile Include="Lua\Game\LENV.lua" />
+    <Compile Include="Lua\Game\map\map.lua" />
     <Compile Include="Lua\Game\Student.lua" />
     <Compile Include="Lua\Main.lua" />
     <Compile Include="Lua\Game\Message.lua" />
