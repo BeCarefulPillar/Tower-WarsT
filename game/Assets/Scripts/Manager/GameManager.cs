@@ -37,8 +37,9 @@ public class GameManager : MonoBehaviour, IManager
     /// </summary>
     public void CheckExtractResource()
     {
-        bool isExists = Directory.Exists(Util.DataPath) &&
-          Directory.Exists(Util.DataPath + "lua/") && File.Exists(Util.DataPath + "files.txt");
+        //bool isExists = Directory.Exists(Util.DataPath) &&
+        //Directory.Exists(Util.DataPath + "lua/") && File.Exists(Util.DataPath + "files.txt");
+        bool isExists = true;
         if (isExists || AppConst.DebugMode)
         {
             StartCoroutine(OnUpdateResource());
