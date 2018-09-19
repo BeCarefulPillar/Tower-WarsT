@@ -2,9 +2,9 @@
 
 public class Main : MonoBehaviour
 {
-    private void Start()
+    private void Awake()
     {
-        //AppFacade.Instance.StartUp();
+        DontDestroyOnLoad(gameObject);
         Game.Ins.StartUp();
     }
 }

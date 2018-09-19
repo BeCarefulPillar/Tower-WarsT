@@ -6,7 +6,7 @@ public class PanelManagerWrap
 {
 	public static void Register(LuaState L)
 	{
-		L.BeginClass(typeof(PanelManager), typeof(Manager));
+		L.BeginClass(typeof(PanelManager), typeof(UnityEngine.MonoBehaviour));
 		L.RegFunction("CreatePanel", CreatePanel);
 		L.RegFunction("ClosePanel", ClosePanel);
 		L.RegFunction("__eq", op_Equality);

@@ -158,11 +158,7 @@ public static class CustomSettings
         _GT(typeof(RectTransform)),
         _GT(typeof(Text)),
 
-        _GT(typeof(Util)),
         _GT(typeof(AppConst)),
-        _GT(typeof(LuaHelper)),
-        _GT(typeof(ByteBuffer)),
-        _GT(typeof(LuaBehaviour)),
 
         _GT(typeof(LuaContainer)),
         _GT(typeof(LuaButton)),
@@ -172,9 +168,7 @@ public static class CustomSettings
         _GT(typeof(LuaManager)),
         _GT(typeof(PanelManager)),
         _GT(typeof(SoundManager)),
-        _GT(typeof(TimerManager)),
         _GT(typeof(ThreadManager)),
-        _GT(typeof(NetworkManager)),
         _GT(typeof(ResourceManager)),		  
     };
 

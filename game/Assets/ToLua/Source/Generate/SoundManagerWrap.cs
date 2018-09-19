@@ -6,7 +6,7 @@ public class SoundManagerWrap
 {
 	public static void Register(LuaState L)
 	{
-		L.BeginClass(typeof(SoundManager), typeof(Manager));
+		L.BeginClass(typeof(SoundManager), typeof(UnityEngine.MonoBehaviour));
 		L.RegFunction("LoadAudioClip", LoadAudioClip);
 		L.RegFunction("CanPlayBackSound", CanPlayBackSound);
 		L.RegFunction("PlayBacksound", PlayBacksound);

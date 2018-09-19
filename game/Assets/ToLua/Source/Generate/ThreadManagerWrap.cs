@@ -6,7 +6,7 @@ public class ThreadManagerWrap
 {
 	public static void Register(LuaState L)
 	{
-		L.BeginClass(typeof(ThreadManager), typeof(Manager));
+		L.BeginClass(typeof(ThreadManager), typeof(UnityEngine.MonoBehaviour));
 		L.RegFunction("AddEvent", AddEvent);
 		L.RegFunction("__eq", op_Equality);
 		L.RegFunction("__tostring", ToLua.op_ToString);

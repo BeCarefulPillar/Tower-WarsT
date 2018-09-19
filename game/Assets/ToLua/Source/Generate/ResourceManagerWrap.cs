@@ -6,7 +6,7 @@ public class ResourceManagerWrap
 {
 	public static void Register(LuaState L)
 	{
-		L.BeginClass(typeof(ResourceManager), typeof(Manager));
+		L.BeginClass(typeof(ResourceManager), typeof(UnityEngine.MonoBehaviour));
 		L.RegFunction("Initialize", Initialize);
 		L.RegFunction("LoadPrefab", LoadPrefab);
 		L.RegFunction("LoadAssetBundle", LoadAssetBundle);

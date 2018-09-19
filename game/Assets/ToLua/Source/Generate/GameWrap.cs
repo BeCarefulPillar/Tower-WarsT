@@ -13,11 +13,8 @@ public class GameWrap
 		L.RegVar("LuaMgr", get_LuaMgr, null);
 		L.RegVar("PanelMgr", get_PanelMgr, null);
 		L.RegVar("SoundMgr", get_SoundMgr, null);
-		L.RegVar("TimerMgr", get_TimerMgr, null);
-		L.RegVar("NetworkMgr", get_NetworkMgr, null);
 		L.RegVar("ResourceMgr", get_ResourceMgr, null);
 		L.RegVar("ThreadMgr", get_ThreadMgr, null);
-		L.RegVar("ObjectPoolMgr", get_ObjectPoolMgr, null);
 		L.RegVar("GameMgr", get_GameMgr, null);
 		L.EndClass();
 	}
@@ -110,44 +107,6 @@ public class GameWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_TimerMgr(IntPtr L)
-	{
-		object o = null;
-
-		try
-		{
-			o = ToLua.ToObject(L, 1);
-			Game obj = (Game)o;
-			TimerManager ret = obj.TimerMgr;
-			ToLua.Push(L, ret);
-			return 1;
-		}
-		catch(Exception e)
-		{
-			return LuaDLL.toluaL_exception(L, e, o, "attempt to index TimerMgr on a nil value");
-		}
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_NetworkMgr(IntPtr L)
-	{
-		object o = null;
-
-		try
-		{
-			o = ToLua.ToObject(L, 1);
-			Game obj = (Game)o;
-			NetworkManager ret = obj.NetworkMgr;
-			ToLua.Push(L, ret);
-			return 1;
-		}
-		catch(Exception e)
-		{
-			return LuaDLL.toluaL_exception(L, e, o, "attempt to index NetworkMgr on a nil value");
-		}
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int get_ResourceMgr(IntPtr L)
 	{
 		object o = null;
@@ -182,25 +141,6 @@ public class GameWrap
 		catch(Exception e)
 		{
 			return LuaDLL.toluaL_exception(L, e, o, "attempt to index ThreadMgr on a nil value");
-		}
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_ObjectPoolMgr(IntPtr L)
-	{
-		object o = null;
-
-		try
-		{
-			o = ToLua.ToObject(L, 1);
-			Game obj = (Game)o;
-			ObjectPoolManager ret = obj.ObjectPoolMgr;
-			ToLua.Push(L, ret);
-			return 1;
-		}
-		catch(Exception e)
-		{
-			return LuaDLL.toluaL_exception(L, e, o, "attempt to index ObjectPoolMgr on a nil value");
 		}
 	}
 

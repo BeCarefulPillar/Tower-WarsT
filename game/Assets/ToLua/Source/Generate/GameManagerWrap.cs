@@ -6,7 +6,7 @@ public class GameManagerWrap
 {
 	public static void Register(LuaState L)
 	{
-		L.BeginClass(typeof(GameManager), typeof(Manager));
+		L.BeginClass(typeof(GameManager), typeof(UnityEngine.MonoBehaviour));
 		L.RegFunction("CheckExtractResource", CheckExtractResource);
 		L.RegFunction("OnResourceInited", OnResourceInited);
 		L.RegFunction("__eq", op_Equality);

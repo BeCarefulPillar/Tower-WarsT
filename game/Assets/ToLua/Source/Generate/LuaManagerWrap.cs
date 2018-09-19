@@ -6,7 +6,7 @@ public class LuaManagerWrap
 {
 	public static void Register(LuaState L)
 	{
-		L.BeginClass(typeof(LuaManager), typeof(Manager));
+		L.BeginClass(typeof(LuaManager), typeof(UnityEngine.MonoBehaviour));
 		L.RegFunction("GetLuaState", GetLuaState);
 		L.RegFunction("InitStart", InitStart);
 		L.RegFunction("DoFile", DoFile);
