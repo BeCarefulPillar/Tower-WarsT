@@ -11,7 +11,7 @@ using LuaInterface;
         Transform Parent {
             get {
                 if (parent == null) {
-                    GameObject go = GameObject.FindWithTag("GuiCamera");
+                    GameObject go = GameObject.Find("UICamera");
                     if (go != null) parent = go.transform;
                 }
                 return parent;

@@ -47,6 +47,8 @@
     <Compile Include="Lua\Game\Student.lua" />
     <Compile Include="Lua\Game\typeof.lua" />
     <Compile Include="Lua\Game\Win.lua" />
+    <Compile Include="Lua\Game\WinHall.lua" />
+    <Compile Include="Lua\Game\WinLand.lua" />
     <Compile Include="Lua\jit\bc.lua" />
     <Compile Include="Lua\jit\bcsave.lua" />
     <Compile Include="Lua\jit\dis_arm.lua" />

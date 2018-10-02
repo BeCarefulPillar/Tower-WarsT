@@ -33,5 +33,6 @@ function Main()
     b:show()
     g:show()
 
-    Win.Open("Prompt", {str="我是参数"})
+    --Win.Open("Prompt", {str="我是参数"})
+    Win.Open("WinLand")
 end
