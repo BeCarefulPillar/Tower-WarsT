@@ -12,7 +12,7 @@ using LuaInterface;
             get {
                 if (parent == null) {
                     GameObject go = GameObject.Find("UICamera");
-                    if (go != null) parent = go.transform;
+                    if (go != null) parent = go.GetComponent<RectTransform>();
                 }
                 return parent;
             }
@@ -51,10 +51,10 @@ using LuaInterface;
 
             GameObject go = Instantiate(prefab) as GameObject;
             go.name = name;
-            go.layer = LayerMask.NameToLayer("Default");
-            go.transform.SetParent(Parent);
-            go.transform.localScale = Vector3.one;
-            go.transform.localPosition = Vector3.zero;
+            //go.layer = LayerMask.NameToLayer("Default");
+            go.transform.SetParent(Parent,false);
+            //go.transform.localScale = Vector3.one;
+            //go.transform.localPosition = Vector3.zero;
             //go.AddComponent<LuaBehaviour>();
 
             if (func != null) func.Call(go);

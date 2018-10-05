@@ -10,3 +10,7 @@ require "Game/Win"
 require "Game/class"
 require "Game/object"
 require "Game/Student"
+
+require "Game/DB"
+DB.Load()
+print(tts(DB))

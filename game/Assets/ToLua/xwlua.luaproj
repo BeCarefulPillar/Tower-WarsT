@@ -39,6 +39,8 @@
     <Compile Include="Lua\cjson\util.lua" />
     <Compile Include="Lua\event.lua" />
     <Compile Include="Lua\Game\class.lua" />
+    <Compile Include="Lua\Game\DB.lua" />
+    <Compile Include="Lua\Game\DB_Plant.lua" />
     <Compile Include="Lua\Game\extend.lua" />
     <Compile Include="Lua\Game\LENV.lua" />
     <Compile Include="Lua\Game\Message.lua" />
@@ -49,6 +51,7 @@
     <Compile Include="Lua\Game\Win.lua" />
     <Compile Include="Lua\Game\WinHall.lua" />
     <Compile Include="Lua\Game\WinLand.lua" />
+    <Compile Include="Lua\Game\WinPZInfo.lua" />
     <Compile Include="Lua\jit\bc.lua" />
     <Compile Include="Lua\jit\bcsave.lua" />
     <Compile Include="Lua\jit\dis_arm.lua" />

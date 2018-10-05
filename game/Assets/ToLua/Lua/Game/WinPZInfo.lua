@@ -6,8 +6,8 @@ function _w.OnLoad(c)
     _body = c
 end
 
-function _w.OnClickPZInfo()
-    Win.Open("WinPZInfo")
+function _w.OnClose()
+    Win.Close("WinPZInfo")
 end
 
 function _w.OnUnLoad(c)
@@ -16,4 +16,4 @@ function _w.OnUnLoad(c)
     end
 end
 
-WinHall = _w
+WinPZInfo = _w
