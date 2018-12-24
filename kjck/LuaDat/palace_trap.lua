@@ -1,1 +1,0 @@
-return{[1]={sn=1,flag=1,vals=50,info="武将血量下降%d%%"},[2]={sn=2,flag=2,vals=50,info="武将蓝量下降%d%%"},[3]={sn=3,flag=3,vals=50,info="武将兵量下降%d%%"},[4]={sn=4,flag=1,vals=40,info="武将血量下降%d%%"},[5]={sn=5,flag=2,vals=40,info="武将蓝量下降%d%%"},[6]={sn=6,flag=3,vals=40,info="武将兵量下降%d%%"}}

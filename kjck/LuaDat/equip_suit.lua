@@ -1,1 +1,0 @@
-return{[1]={sn=1,nm="青龙",i="",att=ExtAtt({{ba,25},{ts,1000},{sb,17}}),excl=0},[2]={sn=2,nm="白虎",i="",att=ExtAtt({{mf,17},{ak,1000},{xy,22}}),excl=0},[3]={sn=3,nm="朱雀",i="",att=ExtAtt({{jy,25},{ml,1000},{cd,10}}),excl=0},[4]={sn=4,nm="玄武",i="",att=ExtAtt({{bf,19},{mf,19},{cf,19}}),excl=0}}
