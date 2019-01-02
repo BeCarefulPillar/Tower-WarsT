@@ -3,6 +3,203 @@ using UnityEngine;
 using System.IO;
 using System.Collections.Generic;
 
+public class XWTool : EditorWindow
+{
+    public class Asset
+    {
+        public Object obj;
+
+        public string assetPath;
+
+        public string[] opts;
+
+        public int idx = 0;
+
+        public bool active = false;
+
+        public string md5;
+
+        public string umd5;
+
+        /// <summary>
+        /// 包装打包参数
+        /// </summary>
+        public string pname;
+
+        public Asset(Object _obj, string _assetPath, string[] _opts)
+        {
+            obj = _obj;
+            assetPath = _assetPath;
+            opts = _opts;
+
+            pname = obj.name;
+        }
+
+        public void Draw()
+        {
+            EditorGUILayout.BeginHorizontal();
+            bool a = EditorGUILayout.Toggle(active,GUILayout.Width(20.0f));
+            if (active != a)
+                active = a;
+            EditorGUILayout.ObjectField("", obj, typeof(Object),GUILayout.Width(140.0f));
+            int i = EditorGUILayout.Popup(idx, opts,GUILayout.Width(100.0f));
+            if (idx != i)
+                idx = i;
+            switch(opts[idx])
+            {
+                case "包装打包":
+                    string n = EditorGUILayout.TextField(pname);
+                    if (pname != n)
+                        pname = n;
+                    break;
+            }
+            EditorGUILayout.EndHorizontal();
+        }
+    }
+
+    private List<Asset> assets = new List<Asset>();
+
+    private Vector2 scrollPosition = Vector2.zero;
+
+    private KeyValuePair<string[], string[]>[] opts = 
+    {
+        new KeyValuePair<string[],string[]>(new string[]{".prefab"},new string[]{"包装打包","离散打包"}),
+        new KeyValuePair<string[],string[]>(new string[]{".cs"},new string[]{"cs操作1","cs操作2"}),
+        new KeyValuePair<string[],string[]>(new string[]{".png"},new string[]{"包装打包","离散打包","纹理操作1","纹理操作2"}),
+        new KeyValuePair<string[],string[]>(new string[]{".lua"},new string[]{"加密Lua文件"}),
+    };
+
+    private string[] GetOpts(string ext)
+    {
+        if (ext == null)
+            return null;
+        for (int i = 0; i < opts.Length; ++i)
+            for (int j = 0; j < opts[i].Key.Length; ++j)
+                if (ext == opts[i].Key[j])
+                    return opts[i].Value;
+        return null;
+    }
+
+    private void OnEnable()
+    {
+        minSize = new Vector2(450.0f, 400.0f);
+    }
+
+    private void OnGUI()
+    {
+        EditorGUILayout.BeginHorizontal();
+        if (GUILayout.Button("添加",GUILayout.Width(80.0f)))
+        {
+            Object[] objs = Selection.objects;
+            if (objs.Length > 0)
+            {
+                Object t;
+                string p;
+                string[] q;
+                foreach (Object obj in objs)
+                {
+                    p = AssetDatabase.GetAssetPath(obj);
+                    if (string.IsNullOrEmpty(p))
+                        continue;
+                    t = AssetDatabase.LoadAssetAtPath<Object>(p);
+                    if (!t)
+                        continue;
+                    if (!assets.Exists(a => { return a.obj == t; }))
+                    {
+                        q = GetOpts(Path.GetExtension(p));
+                        if (q != null && q.Length > 0)
+                            assets.Add(new Asset(t, p, q));
+                    }
+                }
+            }
+        }
+        if(GUILayout.Button("运行",GUILayout.Width(80.0f)))
+        {
+            List<Object> list = new List<Object>(); //离散打包
+            Dictionary<string, List<Object>> dic = new Dictionary<string, List<Object>>(); //包装打包
+            List<string> luas = new List<string>(); //加密Lua文件
+
+            foreach(Asset asset in assets)
+            {
+                if (!asset.active)
+                    continue;
+                switch(asset.opts[asset.idx])
+                {
+                    case "包装打包":
+                        if (!string.IsNullOrEmpty(asset.pname))
+                        {
+                            if(!dic.ContainsKey(asset.pname))
+                                dic.Add(asset.pname, new List<Object>());
+                            dic[asset.pname].Add(asset.obj);
+                        }
+                        break;
+                    case "离散打包":
+                        list.Add(asset.obj);
+                        break;
+                    case "加密Lua文件":
+                        luas.Add(asset.assetPath);
+                        break;
+                }
+            }
+
+            Debug.Log(list.Count);
+            Debug.Log(dic.Count);
+            Debug.Log(luas.Count);
+        }
+        EditorGUILayout.EndHorizontal();
+
+        scrollPosition = EditorGUILayout.BeginScrollView(scrollPosition);
+        for (int i = 0; i < assets.Count; ++i)
+            assets[i].Draw();
+        EditorGUILayout.EndScrollView();
+    }
+
+    [MenuItem("工具/opts")]
+    private static void Open()
+    {
+        EditorWindow.GetWindow<XWTool>().Show();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+public class Auto : AssetPostprocessor
+{
+    public static void OnPostprocessAllAssets(string[] importedAssets, string[] deletedAssets, string[] movedAssets, string[] movedFromAssetPaths)
+    {
+        Debug.Log(importedAssets.Length);
+        Debug.Log(deletedAssets.Length);
+        Debug.Log(movedAssets.Length);
+        Debug.Log(movedFromAssetPaths.Length);
+    }
+}
+
 public class CreateAssetBundle
 {
     [MenuItem("工具/打包")]
@@ -70,7 +267,7 @@ public class CreateAssetBundle
             GameObject go = objs[0] as GameObject;
             string goPath = AssetDatabase.GetAssetPath(go);
             PrefabType pt = PrefabUtility.GetPrefabType(go);
-            if(pt!=PrefabType.Prefab)
+            if (pt != PrefabType.Prefab)
             {
                 Debug.LogError(pt);
                 return;
@@ -91,22 +288,22 @@ public class CreateAssetBundle
                         continue;
                     value = sp.objectReferenceValue;
                     path = AssetDatabase.GetAssetPath(value);
-                    Debug.Log(value + " - "+InvRes(value));
+                    Debug.Log(value + " - " + InvRes(value));
                     if (InvRes(value))
                     {
                         continue;
                     }
                     Debug.Log(" - " + path);
-                    if (string.IsNullOrEmpty(path) || 
+                    if (string.IsNullOrEmpty(path) ||
                         path.StartsWith("Library/") ||
-                        path==goPath || 
-                        AssetDatabase.LoadAssetAtPath<Object>(path)==null)
+                        path == goPath ||
+                        AssetDatabase.LoadAssetAtPath<Object>(path) == null)
                         continue;
                     //if (path.IndexOf("/Resources/") < 0)
-                        //continue;
+                    //continue;
                     Debug.Log("单独" + path);
 
-                    list.Add(new AssetStripper.RefRes( mb, WrapPropertyPath(sp.propertyPath), Path.GetFileNameWithoutExtension(path) ));
+                    list.Add(new AssetStripper.RefRes(mb, WrapPropertyPath(sp.propertyPath), Path.GetFileNameWithoutExtension(path)));
                     sp.objectReferenceValue = null;
 
                     //if (InvRes(value))
@@ -191,6 +388,6 @@ public class CreateAssetBundle
     {
         string[] abs = AssetDatabase.GetAllAssetBundleNames();
         foreach (string ab in abs)
-            AssetDatabase.RemoveAssetBundleName(ab,true);
+            AssetDatabase.RemoveAssetBundleName(ab, true);
     }
 }

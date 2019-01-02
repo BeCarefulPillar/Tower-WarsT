@@ -28,7 +28,7 @@ public class Game : UMonoBehaviour
 
         DontDestroyOnLoad(cachedTransform.root);
 
-        mIns.Add("AssetManager", cachedGameObject.GetComponent<AssetManager>() ?? cachedGameObject.AddComponent<AssetManager>());
+        //mIns.Add("AssetManager", cachedGameObject.GetComponent<AssetManager>() ?? cachedGameObject.AddComponent<AssetManager>());
         mIns.Add("LuaManager", cachedGameObject.GetComponent<LuaManager>() ?? cachedGameObject.AddComponent<LuaManager>());
         mIns.Add("USceneManager", cachedGameObject.GetComponent<USceneManager>() ?? cachedGameObject.AddComponent<USceneManager>());
 
