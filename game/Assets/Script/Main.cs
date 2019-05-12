@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class Main : MonoBehaviour
 {
-    private void Start()
+    public GameObject pb;
+    private IEnumerator Start()
     {
         GameObject go = gameObject;
 
@@ -13,9 +15,14 @@ public class Main : MonoBehaviour
         go.AddComponent<GM>();
         go.AddComponent<BGM>();
 
-        SM.ins.ChangeScene("game");
+        //SM.ins.ChangeScene("game");
 
-        AM.ins.LoadAsset("abc");
-        Instantiate(AM.ins.LoadAsset("abc").prefab);
+        //Instantiate(AM.ins.LoadAsset("abc").prefab);
+
+        pb = Resources.Load<GameObject>("Prefab/abc");
+        yield return null;
+        yield return null;
+        DestroyImmediate(pb);
+        //Instantiate(pb);
     }
 }

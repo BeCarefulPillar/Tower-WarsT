@@ -1,58 +1,35 @@
 ﻿using UnityEngine;
+using System.IO;
 using System.Collections.Generic;
 
 public class AM : Manager<AM>
 {
     private Dictionary<string, string> mPaths = new Dictionary<string, string>();
     private Dictionary<string, Asset> mDic = new Dictionary<string, Asset>();
-    private Queue<Asset> mAssetQueue = new Queue<Asset>();
-    private Asset mCurLoadAsset;
+    public Dictionary<string , Asset> dic { get { return mDic; } }
     private GameObject mGo;
-
     public GameObject cachedGameObject { get { if (mGo == null) mGo = gameObject; return mGo; } }
-
     public override void Init()
     {
         base.Init();
+        //test
+        mPaths.Add("abc", "Prefab/abc");
     }
-
-    public string GetInternalPath(string nm)
-    {
-        string path = null;
-        mPaths.TryGetValue(nm, out path);
-        return path;
-    }
-
     public Asset LoadAsset(string nm, GameObject go = null)
     {
-        Asset asset;
+        Asset asset = null;
         if (!mDic.TryGetValue(nm, out asset))
-            asset = new Asset(nm);
-        asset.AddRef(go ?? cachedGameObject);
-        asset.Load();
-        return asset;
-    }
-
-    public Asset LoadAssetAsync(string nm, GameObject go = null)
-    {
-        Asset asset;
-        if (!mDic.TryGetValue(nm, out asset))
-            asset = new Asset(nm);
-        asset.AddRef(go ?? cachedGameObject);
-        if (!asset.isDone || mCurLoadAsset != asset || !mAssetQueue.Contains(asset))
-            mAssetQueue.Enqueue(asset);
-        return asset;
-    }
-
-    private void Update()
-    {
-        if (mCurLoadAsset != null)
         {
+            string path = "c:/res/" + nm + ".unity3d";
+            if (File.Exists(path))
+                asset = Asset.Create(AssetBundle.LoadFromFile(path));
+            else if (mPaths.TryGetValue(nm, out path))
+                asset = Asset.Create(Resources.Load(path));
+            if (asset != null)
+                mDic.Add(nm, asset);
         }
-        else
-        {
-            while (mAssetQueue.Count > 0 && mCurLoadAsset == null)
-                mCurLoadAsset = mAssetQueue.Dequeue();
-        }
+        if (asset != null)
+            asset.AddRef(go ?? cachedGameObject);
+        return asset;
     }
 }

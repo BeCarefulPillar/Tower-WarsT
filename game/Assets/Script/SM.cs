@@ -3,18 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SM : Manager
+public class SM : Manager<SM>
 {
     public List<string> lst = new List<string>();
     public bool running = false;
 
-    private void Start()
-    {
-        lst.Add(gameObject.scene.name);
-        Debug.Log("进入场景" + lst[0]);
-    }
-
-    private void Update()
+    /*private void Update()
     {
         if (Input.GetKeyDown(KeyCode.J))
         {
@@ -27,7 +21,7 @@ public class SM : Manager
             AddScene("New Scene 1");
         if (Input.GetKeyDown(KeyCode.M))
             RemoveScene("New Scene 1");
-    }
+    }*/
 
     private IEnumerator Adding(string sceneName)
     {
@@ -96,4 +90,32 @@ public class SM : Manager
         }
         StartCoroutine(Removeing(sceneName));
     }
+
+    private IEnumerator Changing(string sceneName)
+    {
+        running = true;
+        yield return null;
+        yield return SceneManager.LoadSceneAsync("transition");
+        yield return null;
+        AsyncOperation ao = SceneManager.LoadSceneAsync(sceneName);
+        yield return null;
+        while (!ao.isDone)
+            yield return null;
+        yield return null;
+        lst.Clear();
+        lst.Add(sceneName);
+        running = false;
+        Debug.Log("切换场景" + sceneName);
+    }
+
+    public void ChangeScene(string sceneName)
+    {
+        if (running)
+        {
+            Debug.LogError("正在运行");
+            return;
+        }
+        StartCoroutine(Changing(sceneName));
+    }
+
 }
