@@ -5,5 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/LuaFramework/Scenes/main.unity
+  - enabled: 1
+    path: Assets/New Scene.unity
+    guid: db4909d2ed491d34a9cee84bdad9c6c6
+  - enabled: 1
+    path: Assets/transition.unity
+    guid: eab8164f6b78eb94c9b89c29967f8170
+  - enabled: 1
+    path: Assets/game.unity
+    guid: ab7cadda4d2ad5b4dbdf5fc8544a38bc

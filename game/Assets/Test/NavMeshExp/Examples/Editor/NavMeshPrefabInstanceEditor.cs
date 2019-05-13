@@ -1,146 +1,146 @@
-using System.Collections.Generic;
-using UnityEditor;
-using UnityEngine;
-using UnityEngine.AI;
-using NavMeshBuilder = UnityEngine.AI.NavMeshBuilder;
+//using System.Collections.Generic;
+//using UnityEditor;
+//using UnityEngine;
+//using UnityEngine.AI;
+//using NavMeshBuilder = UnityEngine.AI.NavMeshBuilder;
 
-[CanEditMultipleObjects]
-[CustomEditor(typeof(NavMeshPrefabInstance))]
-class NavMeshPrefabInstanceEditor : Editor
-{
-    SerializedProperty m_FollowTransformProp;
-    SerializedProperty m_NavMeshDataProp;
+//[CanEditMultipleObjects]
+//[CustomEditor(typeof(NavMeshPrefabInstance))]
+//class NavMeshPrefabInstanceEditor : Editor
+//{
+//    SerializedProperty m_FollowTransformProp;
+//    SerializedProperty m_NavMeshDataProp;
 
-    public void OnEnable()
-    {
-        m_FollowTransformProp = serializedObject.FindProperty("m_FollowTransform");
-        m_NavMeshDataProp = serializedObject.FindProperty("m_NavMesh");
-    }
+//    public void OnEnable()
+//    {
+//        m_FollowTransformProp = serializedObject.FindProperty("m_FollowTransform");
+//        m_NavMeshDataProp = serializedObject.FindProperty("m_NavMesh");
+//    }
 
-    public override void OnInspectorGUI()
-    {
-        var instance = (NavMeshPrefabInstance)target;
-        var go = instance.gameObject;
+//    public override void OnInspectorGUI()
+//    {
+//        var instance = (NavMeshPrefabInstance)target;
+//        var go = instance.gameObject;
 
-        serializedObject.Update();
+//        serializedObject.Update();
 
-        GUI.enabled = false;
-        EditorGUILayout.PropertyField(m_NavMeshDataProp);
-        GUI.enabled = true;
-        EditorGUILayout.PropertyField(m_FollowTransformProp);
+//        GUI.enabled = false;
+//        EditorGUILayout.PropertyField(m_NavMeshDataProp);
+//        GUI.enabled = true;
+//        EditorGUILayout.PropertyField(m_FollowTransformProp);
 
-        EditorGUILayout.Space();
+//        EditorGUILayout.Space();
 
-        OnInspectorGUIPrefab(go);
+//        OnInspectorGUIPrefab(go);
 
-        serializedObject.ApplyModifiedProperties();
-    }
+//        serializedObject.ApplyModifiedProperties();
+//    }
 
-    void OnInspectorGUIPrefab(GameObject go)
-    {
-        var prefab = PrefabUtility.GetPrefabObject(go);
-        var path = AssetDatabase.GetAssetPath(prefab);
+//    void OnInspectorGUIPrefab(GameObject go)
+//    {
+//        var prefab = PrefabUtility.GetPrefabObject(go);
+//        var path = AssetDatabase.GetAssetPath(prefab);
 
-        if (prefab && string.IsNullOrEmpty(path))
-        {
-            if (GUILayout.Button("Select the Prefab asset to bake or clear the navmesh", EditorStyles.helpBox))
-            {
-                Selection.activeObject = PrefabUtility.GetPrefabParent(go);
-                EditorGUIUtility.PingObject(Selection.activeObject);
-            }
-        }
+//        if (prefab && string.IsNullOrEmpty(path))
+//        {
+//            if (GUILayout.Button("Select the Prefab asset to bake or clear the navmesh", EditorStyles.helpBox))
+//            {
+//                Selection.activeObject = PrefabUtility.GetPrefabParent(go);
+//                EditorGUIUtility.PingObject(Selection.activeObject);
+//            }
+//        }
 
-        if (string.IsNullOrEmpty(path))
-            return;
+//        if (string.IsNullOrEmpty(path))
+//            return;
 
-        GUILayout.BeginHorizontal();
-        GUILayout.Space(EditorGUIUtility.labelWidth);
+//        GUILayout.BeginHorizontal();
+//        GUILayout.Space(EditorGUIUtility.labelWidth);
 
-        if (GUILayout.Button("Clear"))
-            OnClear();
+//        if (GUILayout.Button("Clear"))
+//            OnClear();
 
-        if (GUILayout.Button("Bake"))
-            OnBake();
+//        if (GUILayout.Button("Bake"))
+//            OnBake();
 
-        GUILayout.EndHorizontal();
-    }
+//        GUILayout.EndHorizontal();
+//    }
 
-    NavMeshData Build(NavMeshPrefabInstance instance)
-    {
-        var root = instance.transform;
-        var sources = new List<NavMeshBuildSource>();
-        var markups = new List<NavMeshBuildMarkup>();
+//    NavMeshData Build(NavMeshPrefabInstance instance)
+//    {
+//        var root = instance.transform;
+//        var sources = new List<NavMeshBuildSource>();
+//        var markups = new List<NavMeshBuildMarkup>();
 
-        NavMeshBuilder.CollectSources(root, ~0, NavMeshCollectGeometry.RenderMeshes, 0, markups, sources);
-        var settings = NavMesh.GetSettingsByID(0);
-        var bounds = new Bounds(Vector3.zero, 1000.0f * Vector3.one);
-        var navmesh = NavMeshBuilder.BuildNavMeshData(settings, sources, bounds, root.position, root.rotation);
-        navmesh.name = "Navmesh";
-        return navmesh;
-    }
+//        NavMeshBuilder.CollectSources(root, ~0, NavMeshCollectGeometry.RenderMeshes, 0, markups, sources);
+//        var settings = NavMesh.GetSettingsByID(0);
+//        var bounds = new Bounds(Vector3.zero, 1000.0f * Vector3.one);
+//        var navmesh = NavMeshBuilder.BuildNavMeshData(settings, sources, bounds, root.position, root.rotation);
+//        navmesh.name = "Navmesh";
+//        return navmesh;
+//    }
 
-    void OnClear()
-    {
-        foreach (var tgt in targets)
-        {
-            var instance = (NavMeshPrefabInstance)tgt;
-            var go = instance.gameObject;
-            var prefab = PrefabUtility.GetPrefabObject(go);
-            var path = AssetDatabase.GetAssetPath(prefab);
+//    void OnClear()
+//    {
+//        foreach (var tgt in targets)
+//        {
+//            var instance = (NavMeshPrefabInstance)tgt;
+//            var go = instance.gameObject;
+//            var prefab = PrefabUtility.GetPrefabObject(go);
+//            var path = AssetDatabase.GetAssetPath(prefab);
 
-            if (string.IsNullOrEmpty(path))
-            {
-                Debug.LogError("GameObject: " + go + " has no valid prefab path");
-                continue;
-            }
+//            if (string.IsNullOrEmpty(path))
+//            {
+//                Debug.LogError("GameObject: " + go + " has no valid prefab path");
+//                continue;
+//            }
 
-            DestroyNavMeshData(path);
-            AssetDatabase.SaveAssets();
-        }
-    }
+//            DestroyNavMeshData(path);
+//            AssetDatabase.SaveAssets();
+//        }
+//    }
 
-    void OnBake()
-    {
-        foreach (var tgt in targets)
-        {
-            var instance = (NavMeshPrefabInstance)tgt;
-            var go = instance.gameObject;
-            var prefab = PrefabUtility.GetPrefabObject(go);
-            var path = AssetDatabase.GetAssetPath(prefab);
+//    void OnBake()
+//    {
+//        foreach (var tgt in targets)
+//        {
+//            var instance = (NavMeshPrefabInstance)tgt;
+//            var go = instance.gameObject;
+//            var prefab = PrefabUtility.GetPrefabObject(go);
+//            var path = AssetDatabase.GetAssetPath(prefab);
 
-            if (string.IsNullOrEmpty(path))
-            {
-                Debug.LogError("GameObject: " + go + " has no valid prefab path");
-                continue;
-            }
+//            if (string.IsNullOrEmpty(path))
+//            {
+//                Debug.LogError("GameObject: " + go + " has no valid prefab path");
+//                continue;
+//            }
 
-            DestroyNavMeshData(path);
+//            DestroyNavMeshData(path);
 
-            // Store navmesh as a sub-asset of the prefab
-            var navmesh = Build(instance);
-            AssetDatabase.AddObjectToAsset(navmesh, prefab);
+//            // Store navmesh as a sub-asset of the prefab
+//            var navmesh = Build(instance);
+//            AssetDatabase.AddObjectToAsset(navmesh, prefab);
 
-            instance.navMeshData = navmesh;
-            AssetDatabase.SaveAssets();
-        }
-    }
+//            instance.navMeshData = navmesh;
+//            AssetDatabase.SaveAssets();
+//        }
+//    }
 
-    void DestroyNavMeshData(string path)
-    {
-        // Destroy and remove all existing NavMeshData sub-assets
-        var assets = AssetDatabase.LoadAllAssetsAtPath(path);
-        foreach (var o in assets)
-        {
-            var data = o as NavMeshData;
-            if (data != null)
-                DestroyImmediate(o, true);
-        }
-    }
+//    void DestroyNavMeshData(string path)
+//    {
+//        // Destroy and remove all existing NavMeshData sub-assets
+//        var assets = AssetDatabase.LoadAllAssetsAtPath(path);
+//        foreach (var o in assets)
+//        {
+//            var data = o as NavMeshData;
+//            if (data != null)
+//                DestroyImmediate(o, true);
+//        }
+//    }
 
-    [DrawGizmo(GizmoType.Selected | GizmoType.Active | GizmoType.Pickable)]
-    static void RenderGizmo(NavMeshPrefabInstance instance, GizmoType gizmoType)
-    {
-        if (!EditorApplication.isPlaying)
-            instance.UpdateInstance();
-    }
-}
+//    [DrawGizmo(GizmoType.Selected | GizmoType.Active | GizmoType.Pickable)]
+//    static void RenderGizmo(NavMeshPrefabInstance instance, GizmoType gizmoType)
+//    {
+//        if (!EditorApplication.isPlaying)
+//            instance.UpdateInstance();
+//    }
+//}
