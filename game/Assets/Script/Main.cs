@@ -3,26 +3,22 @@ using System.Collections;
 
 public class Main : MonoBehaviour
 {
-    public GameObject pb;
-    private IEnumerator Start()
+    private void Start()
     {
         GameObject go = gameObject;
-
         DontDestroyOnLoad(go);
-
         go.AddComponent<SM>().Init();
+
+        //ui
+        go.AddComponent<WM>().Init();
+        Transform tf = transform;
+        WM.ins.root = tf.Find("UI");
+        WM.ins.cam = tf.Find("Camera").GetComponent<Camera>();
+
         go.AddComponent<AM>().Init();
         go.AddComponent<GM>();
         go.AddComponent<BGM>();
 
-        //SM.ins.ChangeScene("game");
-
-        //Instantiate(AM.ins.LoadAsset("abc").prefab);
-
-        pb = Resources.Load<GameObject>("Prefab/abc");
-        yield return null;
-        yield return null;
-        DestroyImmediate(pb);
-        //Instantiate(pb);
+        WM.Open("WinLogin");
     }
 }

@@ -10,7 +10,7 @@ public partial class GameData {
     public Dictionary<int, HeroData> heros;
 
     public GameData() {
-        LocalizationMgr.Instance.Init();
+        //LocalizationMgr.Instance.Init();
         CsvManager.Init(GameConfig.GetCurrentCsvTargetPath());
         
         heros = new Dictionary<int, HeroData>();

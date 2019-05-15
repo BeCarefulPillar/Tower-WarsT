@@ -51,12 +51,12 @@ namespace JumpCSV {
     }
         public static void Deserialize(string filename, bool isAssetBundle = false) {
         TextAsset textAsset = null;
-        if(isAssetBundle && AssetBundleMgr.ContainsFile(filename, "bytes")) {
-            textAsset = AssetBundleMgr.Load(filename, "bytes") as TextAsset;
-        }
-        else {
-            textAsset = Resources.Load(filename) as TextAsset;
-        }
+        //if(isAssetBundle && AssetBundleMgr.ContainsFile(filename, "bytes")) {
+        //    textAsset = AssetBundleMgr.Load(filename, "bytes") as TextAsset;
+        //}
+        //else {
+        //    textAsset = Resources.Load(filename) as TextAsset;
+        //}
         RecordIdValue.Clear();
         IdRecordValue.Clear();
         Init();
