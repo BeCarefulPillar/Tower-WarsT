@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public static class UnityExtend
+public static class Extend
 {
     #region GameObject
     public static T GetCmp<T>(this GameObject m) where T : Component
@@ -14,7 +14,7 @@ public static class UnityExtend
     public static GameObject AddChild(this GameObject m, GameObject pb, string nm = null)
     {
         GameObject go = Object.Instantiate(pb);
-        go.name = string.IsNullOrEmpty(nm) ? pb.name : nm;
+        go.name = nm == null ? pb.name : nm;
         Transform t = go.transform;
         t.SetParent(m.transform);
         t.localPosition = Vector3.zero;
@@ -41,13 +41,13 @@ public static class UnityExtend
     public static void ActChild(this GameObject m, bool b, params string[] cs)
     {
         Transform t = m.transform;
-        for (int i = 0; i < cs.Length; ++i)
+        for (int i = cs.Length - 1; i >= 0; --i)
             t.Find(cs[i]).gameObject.SetActive(b);
     }
     public static void ActChild(this GameObject m, bool b, params int[] cs)
     {
         Transform t = m.transform;
-        for (int i = 0; i < cs.Length; ++i)
+        for (int i = cs.Length - 1; i >= 0; --i)
             t.GetChild(cs[i]).gameObject.SetActive(b);
     }
     public static void DesAllChild(this GameObject m)
@@ -56,7 +56,14 @@ public static class UnityExtend
         for (int i = t.childCount - 1; i >= 0; --i)
             Object.Destroy(t.GetChild(i).gameObject);
     }
+    public static void ActAllChild(this GameObject m, bool b)
+    {
+        Transform t = m.transform;
+        for (int i = t.childCount - 1; i >= 0; --i)
+            t.GetChild(i).gameObject.SetActive(b);
+    }
     #endregion
+
 
     #region Component
     public static T GetCmp<T>(this Component m) where T : Component
@@ -70,7 +77,7 @@ public static class UnityExtend
     public static GameObject AddChild(this Component m, GameObject pb, string nm = null)
     {
         GameObject go = Object.Instantiate(pb);
-        go.name = string.IsNullOrEmpty(nm) ? pb.name : nm;
+        go.name = nm == null ? pb.name : nm;
         Transform t = go.transform;
         t.SetParent(m is Transform ? m as Transform : m.transform);
         t.localPosition = Vector3.zero;
@@ -97,14 +104,20 @@ public static class UnityExtend
     public static void ActChild(this Component m, bool b, params string[] cs)
     {
         Transform t = m is Transform ? m as Transform : m.transform;
-        for (int i = 0; i < cs.Length; ++i)
+        for (int i = cs.Length - 1; i >= 0; --i)
             t.Find(cs[i]).gameObject.SetActive(b);
     }
     public static void ActChild(this Component m, bool b, params int[] cs)
     {
         Transform t = m is Transform ? m as Transform : m.transform;
-        for (int i = 0; i < cs.Length; ++i)
+        for (int i = cs.Length - 1; i >= 0; --i)
             t.GetChild(cs[i]).gameObject.SetActive(b);
+    }
+    public static void ActAllChild(this Component m, bool b)
+    {
+        Transform t = m is Transform ? m as Transform : m.transform;
+        for (int i = t.childCount - 1; i >= 0; --i)
+            t.GetChild(i).gameObject.SetActive(b);
     }
     public static void DesAllChild(this Component m)
     {
@@ -112,7 +125,12 @@ public static class UnityExtend
         for (int i = t.childCount - 1; i >= 0; --i)
             Object.Destroy(t.GetChild(i).gameObject);
     }
+    public static void SetActive(this Component m, bool b)
+    {
+        m.gameObject.SetActive(b);
+    }
     #endregion
+
 
     #region Transform
     public static float GetLocalX(this Transform m)
