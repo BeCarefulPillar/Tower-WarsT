@@ -7,17 +7,16 @@ public class Main : MonoBehaviour
     {
         GameObject go = gameObject;
         DontDestroyOnLoad(go);
-        go.AddComponent<SM>().Init();
+        go.AddCmp<SM>().Init();
 
         //ui
-        go.AddComponent<WM>().Init();
-        Transform tf = transform;
-        WM.ins.root = tf.Find("UI");
-        WM.ins.cam = tf.Find("Camera").GetComponent<Camera>();
+        go.AddCmp<WM>().Init();
+        WM.ins.root = go.Child("UI");
+        WM.ins.cam = go.Child<Camera>("Camera");
 
-        go.AddComponent<AM>().Init();
-        go.AddComponent<GM>();
-        go.AddComponent<BGM>();
+        go.AddCmp<AM>().Init();
+        go.AddCmp<GM>();
+        go.AddCmp<BGM>();
 
         WM.Open("WinLogin");
     }
