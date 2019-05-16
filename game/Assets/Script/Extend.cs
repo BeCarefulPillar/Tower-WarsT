@@ -7,6 +7,10 @@ public static class Extend
     {
         return m.GetComponent<T>();
     }
+    public static T[] GetCmps<T>(this GameObject m) where T : Component
+    {
+        return m.GetComponents<T>();
+    }
     public static T AddCmp<T>(this GameObject m) where T : Component
     {
         return m.AddComponent<T>();
@@ -68,6 +72,10 @@ public static class Extend
     public static T GetCmp<T>(this Component m) where T : Component
     {
         return m.GetComponent<T>();
+    }
+    public static T[] GetCmps<T>(this Component m) where T : Component
+    {
+        return m.GetComponents<T>();
     }
     public static T AddCmp<T>(this Component m) where T : Component
     {
@@ -176,7 +184,8 @@ public static class Extend
     public static void SetX(this Transform m, float v)
     {
         Vector3 t = m.position;
-        t.x = v; m.position = t;
+        t.x = v;
+        m.position = t;
     }
     public static void SetY(this Transform m, float v)
     {

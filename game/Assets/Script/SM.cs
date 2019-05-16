@@ -1,31 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
 public class SM : Manager<SM>
 {
-    public List<string> lst = new List<string>();
-    public bool running = false;
+    private HashSet<string> mScenes = new HashSet<string>();
+    private bool mRunning = false;
 
-    /*private void Update()
+    private IEnumerator IEAdd(string sceneName, Action action = null)
     {
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            AddScene("New Scene");
-            AddScene("New Scene");
-        }
-        if (Input.GetKeyDown(KeyCode.K))
-            RemoveScene("New Scene");
-        if (Input.GetKeyDown(KeyCode.N))
-            AddScene("New Scene 1");
-        if (Input.GetKeyDown(KeyCode.M))
-            RemoveScene("New Scene 1");
-    }*/
-
-    private IEnumerator Adding(string sceneName)
-    {
-        running = true;
+        mRunning = true;
         yield return null;
         AsyncOperation ao = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
         yield return null;
@@ -37,14 +23,16 @@ public class SM : Manager<SM>
             yield return null;
         }
         yield return null;
-        running = false;
-        lst.Add(sceneName);
+        mRunning = false;
+        mScenes.Add(sceneName);
+        if (action != null)
+            action();
         Debug.Log("添加场景" + sceneName);
     }
 
-    private IEnumerator Removeing(string sceneName)
+    private IEnumerator IERemove(string sceneName, Action action = null)
     {
-        running = true;
+        mRunning = true;
         yield return null;
         AsyncOperation ao = SceneManager.UnloadSceneAsync(sceneName);
         yield return null;
@@ -56,66 +44,40 @@ public class SM : Manager<SM>
             yield return null;
         }
         yield return null;
-        running = false;
-        lst.Remove(sceneName);
+        mRunning = false;
+        mScenes.Remove(sceneName);
+        if (action != null)
+            action();
         Debug.Log("移除场景" + sceneName);
     }
 
-    public void AddScene(string sceneName)
+    public void AddScene(string sceneName, Action action = null)
     {
-        if (running)
+        if (mRunning)
         {
-            Debug.LogError("正在运行");
+            Debug.LogError("mRunning");
             return;
         }
-        if (lst.Exists(s => s == sceneName))
+        if (mScenes.Contains(sceneName))
         {
-            Debug.LogError("已存在场景" + sceneName);
+            Debug.LogError("mScenes.Contains(sceneName)");
             return;
         }
-        StartCoroutine(Adding(sceneName));
+        StartCoroutine(IEAdd(sceneName, action));
     }
 
-    public void RemoveScene(string sceneName)
+    public void RemoveScene(string sceneName, Action action = null)
     {
-        if (running)
+        if (mRunning)
         {
-            Debug.LogError("正在运行");
+            Debug.LogError("mRunning");
             return;
         }
-        if (!lst.Exists(s => s == sceneName))
+        if (!mScenes.Contains(sceneName))
         {
-            Debug.LogError("不存在场景" + sceneName);
+            Debug.LogError("!mScenes.Contains(sceneName)");
             return;
         }
-        StartCoroutine(Removeing(sceneName));
+        StartCoroutine(IERemove(sceneName, action));
     }
-
-    private IEnumerator Changing(string sceneName)
-    {
-        running = true;
-        yield return null;
-        yield return SceneManager.LoadSceneAsync("transition");
-        yield return null;
-        AsyncOperation ao = SceneManager.LoadSceneAsync(sceneName);
-        yield return null;
-        while (!ao.isDone)
-            yield return null;
-        yield return null;
-        lst.Clear();
-        lst.Add(sceneName);
-        running = false;
-        Debug.Log("切换场景" + sceneName);
-    }
-
-    public void ChangeScene(string sceneName)
-    {
-        if (running)
-        {
-            Debug.LogError("正在运行");
-            return;
-        }
-        StartCoroutine(Changing(sceneName));
-    }
-
 }
