@@ -1,16 +1,49 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class BGM : MonoBehaviour {
+public class BGM : Manager<BGM>
+{
+    private AudioSource mSource;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public override void Init()
+    {
+        base.Init();
+
+        GameObject go = gameObject;
+        go.AddCmp<AudioListener>();
+        mSource = go.AddCmp<AudioSource>();
+        mSource.volume = PlayerPrefs.GetFloat("BGM.volume", 0.5f);
+        mSource.playOnAwake = false;
+    }
+
+    public float volume
+    {
+        get
+        {
+            return mSource.volume;
+        }
+        set
+        {
+            if (value != mSource.volume)
+            {
+                mSource.volume = value;
+                PlayerPrefs.SetFloat("BGM.volume", mSource.volume);
+            }
+        }
+    }
+
+    public void PlayMusic(string nm)
+    {
+    }
+
+    public void PlayMusic(AudioClip clip)
+    {
+    }
+
+    public void PlaySound(string nm)
+    {
+    }
+
+    public void PlaySound(AudioClip clip)
+    {
+    }
 }

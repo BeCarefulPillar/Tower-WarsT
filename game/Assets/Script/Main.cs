@@ -16,7 +16,7 @@ public class Main : MonoBehaviour
 
         go.AddCmp<AM>().Init();
         go.AddCmp<GM>();
-        go.AddCmp<BGM>();
+        go.AddCmp<BGM>().Init();
 
         WM.Open("WinLogin");
     }

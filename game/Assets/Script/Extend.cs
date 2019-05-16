@@ -13,10 +13,9 @@ public static class Extend
     }
     public static GameObject AddChild(this GameObject m, GameObject pb, string nm = null)
     {
-        GameObject go = Object.Instantiate(pb);
-        go.name = nm == null ? pb.name : nm;
+        GameObject go = Object.Instantiate(pb, m.transform);
         Transform t = go.transform;
-        t.SetParent(m.transform);
+        t.name = nm == null ? pb.name : nm;
         t.localPosition = Vector3.zero;
         t.localRotation = Quaternion.identity;
         t.localScale = Vector3.one;
@@ -76,10 +75,9 @@ public static class Extend
     }
     public static GameObject AddChild(this Component m, GameObject pb, string nm = null)
     {
-        GameObject go = Object.Instantiate(pb);
-        go.name = nm == null ? pb.name : nm;
+        GameObject go = Object.Instantiate(pb, m is Transform ? m as Transform : m.transform);
         Transform t = go.transform;
-        t.SetParent(m is Transform ? m as Transform : m.transform);
+        t.name = nm == null ? pb.name : nm;
         t.localPosition = Vector3.zero;
         t.localRotation = Quaternion.identity;
         t.localScale = Vector3.one;
