@@ -66,12 +66,12 @@ namespace JumpCSV {
         }
         public static void Deserialize(string filename, bool isAssetBundle = false) {
             TextAsset textAsset = null;
-            //if(isAssetBundle && AssetBundleMgr.ContainsFile(filename, "bytes")) {
-            //    textAsset = AssetBundleMgr.Load(filename, "bytes") as TextAsset;
-            //}
-            //else {
-            //    textAsset = Resources.Load(filename) as TextAsset;
-            //}
+            if(isAssetBundle && AssetBundleMgr.ContainsFile(filename, "bytes")) {
+                textAsset = AssetBundleMgr.Load(filename, "bytes") as TextAsset;
+            }
+            else {
+                textAsset = Resources.Load(filename) as TextAsset;
+            }
             BinaryFormatter formatter = new BinaryFormatter();
             MemoryStream mstream = new MemoryStream();
             byte[] tmp = new byte[textAsset.bytes.Length];
