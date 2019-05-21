@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 
-public static class GameConfig {
+public static partial class GameConfig {
     public enum EChannel {
         TEST = 0,
         ALPHA = 1,

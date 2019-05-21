@@ -920,7 +920,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: login
 --- !u!222 &1561317369
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1066,6 +1066,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pressButton: {fileID: 396974288}
   input: {fileID: 1068169492}
+  loginButton: {fileID: 1051736912}
 --- !u!1 &2066000581
 GameObject:
   m_ObjectHideFlags: 0
