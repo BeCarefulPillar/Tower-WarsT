@@ -1,25 +1,57 @@
 ﻿using UnityEngine;
+using UnityEngine.AI;
 
-/// <summary>
-/// 战场显示单位
-/// </summary>
+[RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(NavMeshAgent))]
 public class BU_Unit : MonoBehaviour
 {
-    private BU_Map mMap;
-    private BD_Unit mDat;
+    public BD_Unit dat;
 
     private Transform mTrans;
     private GameObject mGo;
+    private NavMeshAgent mAgent;
+    private Animator mAni;
 
-    public void Init(BU_Map map, BD_Unit dat)
+    public float dt;
+    public bool isMe = false;
+
+    private void Awake()
     {
-        mMap = map;
-        mDat = dat;
-        mDat.body = this;
+        dat = new BD_Unit();
+        dat.isMe = isMe;
+
+        mTrans = transform;
+        mAgent = GetComponent<NavMeshAgent>();
+        mAni = GetComponent<Animator>();
     }
 
-    public void Dispose()
+    private void Update()
     {
+        if(dat.isMe)
+        {
+            //me
+
+            float hor = Input.GetAxis("Horizontal");
+            float ver = Input.GetAxis("Vertical");
+            //bool space = Input.GetKeyDown(KeyCode.Space);
+            //bool ml = Input.GetMouseButtonDown(0);
+            //bool mr = Input.GetMouseButtonDown(1);
+
+            mTrans.position += mTrans.right * hor * 1.0f + mTrans.forward * ver * 1.0f;
+            if (hor != 0f || ver != 0f)
+            {
+            }
+        }
+        else
+        {
+            //ai
+
+            if (Time.realtimeSinceStartup > dt)
+            {
+                dt = Time.realtimeSinceStartup + 1f;
+                mAgent.destination = new Vector3(Random.Range(-10, 10), Random.Range(-10, 10), 0f);
+            }
+        }
     }
 
     public Transform cachedTransform { get { if (mTrans == null) mTrans = transform; return mTrans; } }
