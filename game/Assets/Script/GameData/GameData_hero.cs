@@ -9,7 +9,7 @@ public partial class GameData {
     }
 
     public void AddHero(HeroData hero) {
-        heros.Add(hero.id, hero);
+        recordDataInfo.heros.Add(hero.id, hero);
     }
     
 }

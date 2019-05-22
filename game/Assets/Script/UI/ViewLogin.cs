@@ -33,7 +33,6 @@ public class ViewLogin : MonoBehaviour {
         mysqlMethod.GetAccountPlayer(str);
         
         loginButton.enabled = false;
-        Debug.Log(GameData.Instance.mName);
         Debug.Log("login success");
     }
 } 
