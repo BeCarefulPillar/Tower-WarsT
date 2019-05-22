@@ -6,7 +6,7 @@ using System.Data;
 using MySql.Data.MySqlClient;
 
 
-public class ViewLogin : MonoBehaviour {
+public class ViewLogin : View {
     public Button pressButton;
     public InputField input;
     public Button loginButton;

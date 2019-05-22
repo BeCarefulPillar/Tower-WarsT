@@ -7,6 +7,7 @@ using System.IO;
 using System.Text;
 
 public partial class GameData {
+    private static readonly GameData mInstance = new GameData();
     private int mId;
     private string mAccountId;
 
@@ -14,22 +15,22 @@ public partial class GameData {
     public int sex;
     public int level;
     public string recordInfo;
-
     public RecordInfo recordDataInfo;
 
-    private static readonly GameData mInstance = new GameData();
+    public bool IsLogin { get; private set; }
 
     public class RecordInfo {
         public Dictionary<int, HeroData> heros;
+        public RecordInfo() {
+            heros = new Dictionary<int, HeroData>();
+        }
     }
     
-
     public GameData() {
         LocalizationMgr.Instance.Init();
         CsvManager.Init(GameConfig.GetCurrentCsvTargetPath()); 
         recordDataInfo = new RecordInfo();
-        recordDataInfo.heros = new Dictionary<int, HeroData>();
-        
+        IsLogin = false;
     }
 
     public void InitDataInfo(int id, string accountId, string name, int sex, int level, string recordInfo) {
@@ -41,11 +42,11 @@ public partial class GameData {
         this.recordInfo = recordInfo;
         
         Deserialization();
+        IsLogin = true;
         //CreateHero(1);
-        SavePlayer();
     }
     
-    public void Serialization() {
+    private void Serialization() {
         var serializer = new DataContractJsonSerializer(typeof(RecordInfo));
         var stream = new MemoryStream();
         serializer.WriteObject(stream, recordDataInfo);
@@ -55,16 +56,13 @@ public partial class GameData {
         stream.Read(dataBytes, 0, (int)stream.Length);
 
         string dataString = Encoding.UTF8.GetString(dataBytes);
-
-        Debug.Log(dataString);
         recordInfo = dataString;
     }
 
-    public void Deserialization() {
+    private void Deserialization() {
         var serializer = new DataContractJsonSerializer(typeof(RecordInfo));
         var mStream = new MemoryStream(Encoding.Default.GetBytes(recordInfo));
         recordDataInfo = (RecordInfo)serializer.ReadObject(mStream);
-        Debug.Log(recordDataInfo.heros[1].heroId);
     }
 
     public static GameData Instance {

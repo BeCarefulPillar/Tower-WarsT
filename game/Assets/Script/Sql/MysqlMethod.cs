@@ -33,14 +33,13 @@ public class MysqlMethod {
             return;
         }
         msqlReader.Close();
-        GameData.Instance.Serialization();
         MySqlCommand cmd;
         cmd = mysqlConnection.CreateCommand();
         cmd.CommandText = "INSERT INTO players(id, accountId, name, recordInfo) VALUES(@id, @accountId, @name, @recordInfo)";
         cmd.Parameters.AddWithValue("@id", dbid);
         cmd.Parameters.AddWithValue("@accountId", accountId);
         cmd.Parameters.AddWithValue("@name", accountId);
-        cmd.Parameters.AddWithValue("@recordInfo", GameData.Instance.recordInfo);
+        cmd.Parameters.AddWithValue("@recordInfo", "{}");
         cmd.ExecuteNonQuery();
 
         dbid += 1;
@@ -51,7 +50,7 @@ public class MysqlMethod {
         update.ExecuteNonQuery();
 
         CloseMysql(mysqlConnection);
-        GameData.Instance.InitDataInfo(dbid, accountId, accountId, 1, 1, GameData.Instance.recordInfo);
+        GameData.Instance.InitDataInfo(dbid, accountId, accountId, 1, 1, "{}");
         Debug.Log("create account success");
     }
 
@@ -93,7 +92,6 @@ public class MysqlMethod {
         update = mysqlConnection.CreateCommand();
 
         var gameData = GameData.Instance;
-        Debug.Log(gameData.recordInfo);
         update.CommandText = "UPDATE players SET `recordInfo` = '" + gameData.recordInfo + "'," + 
             "`name` = '" + gameData.name + "'," +
             "`sex` = '" + gameData.sex + "'," +
