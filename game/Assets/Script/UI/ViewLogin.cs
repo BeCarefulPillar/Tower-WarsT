@@ -1,12 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
-using System.Data;
-using MySql.Data.MySqlClient;
+using UnityEngine.SceneManagement;
 
-
-public class ViewLogin : View {
+public class ViewLogin : MonoBehaviour {
     public Button pressButton;
     public InputField input;
     public Button loginButton;
@@ -31,8 +27,8 @@ public class ViewLogin : View {
         }
         MysqlMethod mysqlMethod = new MysqlMethod();
         mysqlMethod.GetAccountPlayer(str);
-        
         loginButton.enabled = false;
         Debug.Log("login success");
+        SceneManager.LoadScene("gameTest_SK");
     }
 } 
