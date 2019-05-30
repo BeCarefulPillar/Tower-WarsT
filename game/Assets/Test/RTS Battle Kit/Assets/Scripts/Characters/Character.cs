@@ -109,7 +109,7 @@ public class Character : MonoBehaviour {
 		//If there's a currentTarget and its within the attack range, move agent to currenttarget
 		if(currentTarget != null && Vector3.Distance(transform.position, currentTarget.transform.position) < minAttackDistance){
 			if(!wizardSpawns){
-			agent.Resume();
+                agent.isStopped = false;
 			}
 		agent.SetDestination(currentTarget.position);	
 		
@@ -135,14 +135,14 @@ public class Character : MonoBehaviour {
 		//if character is not moving to clicked position attack the castle
 		if(!goingToClickedPos){
 			if(!wizardSpawns){
-			agent.Resume();
+			agent.isStopped = false;
 			}
 		agent.SetDestination(castleAttackPosition);	
 		}
 		//if character is close enough to castle, attack castle
 		
 		if(castle != null && Vector3.Distance(transform.position, castleAttackPosition) <= castleStoppingDistance + castle.GetComponent<Castle>().size){
-		agent.Stop();
+		agent.isStopped = true;
 		foreach(Animator animator in animators){
 			animator.SetBool("Attacking", true);
 		}	
@@ -152,7 +152,7 @@ public class Character : MonoBehaviour {
 		}
 		//if character is traveling to castle play running animation
 		else if(!wizardSpawns){
-		agent.Resume();
+		agent.isStopped = false;
 		foreach(Animator animator in animators){
 			animator.SetBool("Attacking", false);
 		}	
@@ -166,7 +166,7 @@ public class Character : MonoBehaviour {
 		goingToClickedPos = false;	
 		agent.stoppingDistance = defaultStoppingDistance;
 			if(!wizardSpawns){
-			agent.Resume();
+			agent.isStopped = false;
 			}
 		}
 		}
@@ -247,7 +247,7 @@ public class Character : MonoBehaviour {
     if(Physics.Raycast(ray, out hit))
 		//if you clicked battle ground, move character to clicked point and play running animation
 		if(hit.collider.gameObject.CompareTag("Battle ground")){
-		agent.Resume();
+		agent.isStopped = false;
         agent.SetDestination(hit.point);
 		CharacterManager.clickedPos = hit.point;
 		targetPosition = hit.point;
@@ -280,7 +280,7 @@ public class Character : MonoBehaviour {
 			wizardSpawns = true;
 			
 			//stop the navmesh agent
-			agent.Stop();
+			agent.isStopped = true;
 			
 			//start spawning animation
 			animators[0].SetBool("Spawning", true);

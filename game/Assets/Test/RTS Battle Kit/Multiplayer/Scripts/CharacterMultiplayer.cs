@@ -110,7 +110,7 @@ public class CharacterMultiplayer : NetworkBehaviour {
 		else if(destination == 2){
 			//move agent towards the castle
 			agent.SetDestination(castleAttackPosition);
-			agent.Resume();
+			agent.isStopped = false;
 			
 			//play running animation [attacking = false] -> [running = true]
 			animator.SetBool("Attacking", false);
@@ -129,7 +129,7 @@ public class CharacterMultiplayer : NetworkBehaviour {
 			//make sure we're really close enough to the castle to attack it
 			if(Vector3.Distance(transform.position, castleAttackPosition) <= castleStoppingDistance + castle.GetComponent<Castle>().size){
 			//stop agent and play attack animation
-			agent.Stop();
+			agent.isStopped = false;
 			animator.SetBool("Attacking", true);
 			}
 			
@@ -367,7 +367,7 @@ public class CharacterMultiplayer : NetworkBehaviour {
 		}
 		//resume the agent
 		if(agent != null){
-			agent.Resume();
+			agent.isStopped = false;
 		}
 	}
 	
@@ -390,7 +390,7 @@ public class CharacterMultiplayer : NetworkBehaviour {
 		
 		//actually resume the agent
 		if(agent != null){
-			agent.Resume();
+			agent.isStopped = false;
 		}
 	}
 	
