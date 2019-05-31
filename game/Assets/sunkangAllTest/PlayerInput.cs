@@ -13,14 +13,18 @@ public class PlayerInput : MonoBehaviour {
     public string keyB;
     public string keyC;
     public string keyD;
-    [Header("========= Output signale ========")]
+    [Header("========= Output signal ========")]
     public float Dup;
     public float Dright;
     public float Dmag;
     public Vector3 Dvec;
 
     public bool inputEnable = true;
+    //press signal
     public bool run = true;
+    //trigger signal
+    public bool jump = true;
+    private bool lastJump = false; 
 
     [Header("========= Other ========")]
     private float targerDup;
@@ -35,6 +39,7 @@ public class PlayerInput : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+        //所有的转换到数学坐标
         targerDup = (Input.GetKey(keyUp) ? 1.0f : 0) - (Input.GetKey(keyDown) ? 1.0f : 0);
         targerDright = (Input.GetKey(keyRight) ? 1.0f : 0) - (Input.GetKey(keyLeft) ? 1.0f : 0);
 
@@ -43,11 +48,30 @@ public class PlayerInput : MonoBehaviour {
             targerDright = 0;
         }
 
-        Dup = Mathf.SmoothDamp(Dup, targerDup, ref velocityDup, 0.1f);
-        Dright = Mathf.SmoothDamp(Dright, targerDright, ref velocityDright, 0.1f);
-        Dmag = Mathf.Sqrt((Dup * Dup) + (Dright * Dright));
-        Dvec = Dright * transform.right + Dup * transform.forward;
+        Dup = Mathf.SmoothDamp(Dup, targerDup, ref velocityDup, 0.1f);              //y 
+        Dright = Mathf.SmoothDamp(Dright, targerDright, ref velocityDright, 0.1f);  //x
+        
+        Vector2 tempDAxis = SquareToCricle(new Vector2(Dright, Dup));
+        var Dright2 = tempDAxis.x;
+        var Dup2 = tempDAxis.y;
+        Dmag = Mathf.Sqrt((Dup2 * Dup2) + (Dright2 * Dright2));
+        Dvec = Dright2 * transform.right + Dup2 * transform.forward;
 
         run = Input.GetKey(keyA);
+
+        var newJump = Input.GetKey(keyB);
+        if(newJump != lastJump && newJump == true) {
+            jump = true;
+        } else {
+            jump = false;
+        }
+        lastJump = newJump;
+    }
+
+    Vector2 SquareToCricle(Vector2 input) {
+        Vector2 output = Vector2.zero;
+        output.x = input.x * Mathf.Sqrt(1 - (input.y * input.y) / 2.0f);
+        output.y = input.y * Mathf.Sqrt(1 - (input.x * input.x) / 2.0f);
+        return output;
     }
 }

@@ -199,7 +199,7 @@ MonoBehaviour:
   keyLeft: a
   keyRight: d
   keyA: left shift
-  keyB: 
+  keyB: j
   keyC: 
   keyD: 
   Dup: 0
@@ -208,6 +208,7 @@ MonoBehaviour:
   Dvec: {x: 0, y: 0, z: 0}
   inputEnable: 1
   run: 1
+  jump: 1
 --- !u!114 &461301002
 MonoBehaviour:
   m_ObjectHideFlags: 0
