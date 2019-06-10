@@ -4,13 +4,17 @@ using System.Collections;
 public class ActorColider : MonoBehaviour {
     public GameObject model;
     public PlayerInput pi;
-    public Rigidbody rigid;
     public float speed = 1.4f;
     public float runMutiply = 2.0f;
+    public float jumpVelocity = 3.0f;
 
     [SerializeField]
     private Animator anim;
-    private Vector3 movingVec;
+    private Rigidbody rigid;
+    private Vector3 planarVec;
+    private Vector3 thrustVec;
+
+    private bool lockPlanar = false;
     // Use this for initialization
     void Awake() {
         pi = GetComponent<PlayerInput>();
@@ -24,14 +28,29 @@ public class ActorColider : MonoBehaviour {
         if (pi.jump) {
             anim.SetTrigger("jump");
         }
-       
+
         if (pi.Dmag > 0.01f) {
             model.transform.forward = Vector3.Slerp(model.transform.forward, pi.Dvec, 0.3f);//球形差值
         }
-        movingVec = pi.Dmag * model.transform.forward * speed * (pi.run ? runMutiply : 1.0f);
+        if (lockPlanar == false) {
+            planarVec = pi.Dmag * model.transform.forward * speed * (pi.run ? runMutiply : 1.0f);
+        }
     }
 
     private void FixedUpdate() {
-        rigid.position += movingVec * Time.fixedDeltaTime;
+        //rigid.position += planarVec * Time.fixedDeltaTime;
+        rigid.velocity = new Vector3(planarVec.x, rigid.velocity.y, planarVec.z) + thrustVec;
+        thrustVec = Vector3.zero;
+    }
+
+    public void OnJumpEnter() {
+        pi.inputEnable = false;
+        lockPlanar = true;
+        thrustVec = new Vector3(0, jumpVelocity, 0);
+    }
+
+    public void OnJumpExit() {
+        pi.inputEnable = true;
+        lockPlanar = false;
     }
 }
