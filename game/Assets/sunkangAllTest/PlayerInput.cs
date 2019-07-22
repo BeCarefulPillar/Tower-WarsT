@@ -13,13 +13,21 @@ public class PlayerInput : MonoBehaviour {
     public string keyB;
     public string keyC;
     public string keyD;
+
+    public string keyJRight;
+    public string keyJUp;
+    public string keyJLeft;
+    public string keyJDown;
+
     [Header("========= Output signal ========")]
     public float Dup;
     public float Dright;
     public float Dmag;
     public Vector3 Dvec;
+    public float Jup;
+    public float Jright;
 
-    public bool inputEnable = true;
+   
     //press signal
     public bool run = true;
     //trigger signal
@@ -27,6 +35,8 @@ public class PlayerInput : MonoBehaviour {
     private bool lastJump = false; 
 
     [Header("========= Other ========")]
+    public bool inputEnable = true; //flag
+    
     private float targerDup;
     private float targerDright;
     private float velocityDup;
@@ -39,6 +49,11 @@ public class PlayerInput : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+
+        Jup = (Input.GetKey(keyJUp)? 1.0f: 0.0f) - (Input.GetKey(keyJDown)? 1.0f: 0.0f);
+        Jright = (Input.GetKey(keyJRight)? 1.0f: 0.0f) - (Input.GetKey(keyJLeft)? 1.0f: 0.0f);
+
+
         //所有的转换到数学坐标
         targerDup = (Input.GetKey(keyUp) ? 1.0f : 0) - (Input.GetKey(keyDown) ? 1.0f : 0);
         targerDright = (Input.GetKey(keyRight) ? 1.0f : 0) - (Input.GetKey(keyLeft) ? 1.0f : 0);

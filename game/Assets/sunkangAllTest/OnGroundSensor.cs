@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class OnGroundSensor : MonoBehaviour {
     public CapsuleCollider capcol;
+    public float offset = 0.1f;
 
     private float radis;
     private Vector3 point1;
@@ -11,19 +12,19 @@ public class OnGroundSensor : MonoBehaviour {
 
 	// Use this for initialization
 	void Awake () {
-		radis = capcol.radius;
+		radis = capcol.radius - 0.05f;
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-        point1 = transform.position + transform.up * radis;
-        point2 = transform.position + transform.up * capcol.height - transform.up * radis;
+        point1 = transform.position + transform.up * (radis - offset);
+        point2 = transform.position + transform.up * (capcol.height - offset) - transform.up * radis;
 
         Collider[] outputCols = Physics.OverlapCapsule(point1, point2, radis, LayerMask.GetMask("ground"));
         if (outputCols.Length != 0) {
-            foreach (var col in outputCols) {
-                print("collision:" + col.name);
-            }
+            SendMessageUpwards("IsGround");
+        } else {
+            SendMessageUpwards("IsNotGround");
         }
 
     }

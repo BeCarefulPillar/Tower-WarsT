@@ -1,13 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ActorColider : MonoBehaviour {
+public class ActorController : MonoBehaviour {
     public GameObject model;
     public PlayerInput pi;
     public float speed = 1.4f;
     public float runMutiply = 2.0f;
     public float jumpVelocity = 3.0f;
-
+    public float rollVelocity = 3.0f;
     [SerializeField]
     private Animator anim;
     private Rigidbody rigid;
@@ -25,6 +25,10 @@ public class ActorColider : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         anim.SetFloat("forward", pi.Dmag * Mathf.Lerp(anim.GetFloat("forward"), (pi.run ? 2.0f : 1.0f), 0.3f));//线性差值
+        if (rigid.velocity.magnitude > 5.0f) {
+            anim.SetTrigger("roll");
+        }
+        
         if (pi.jump) {
             anim.SetTrigger("jump");
         }
@@ -43,14 +47,51 @@ public class ActorColider : MonoBehaviour {
         thrustVec = Vector3.zero;
     }
 
+    ///
+    /// Message processing block
+    /// 
+    
     public void OnJumpEnter() {
         pi.inputEnable = false;
         lockPlanar = true;
         thrustVec = new Vector3(0, jumpVelocity, 0);
     }
 
-    public void OnJumpExit() {
+//     public void OnJumpExit() {
+//         pi.inputEnable = true;
+//         lockPlanar = false;
+//     }
+
+    public void IsGround() {
+        anim.SetBool("isGround", true);
+    }
+
+    public void IsNotGround() {
+        anim.SetBool("isGround", false);
+    }
+
+    public void OnGroundEnter() {
         pi.inputEnable = true;
         lockPlanar = false;
+    }
+
+    public void OnFallEnter() {
+        pi.inputEnable = false;
+        lockPlanar = true;
+    }
+
+    public void OnRollEnter() {
+        pi.inputEnable = false;
+        lockPlanar = true;
+        thrustVec = new Vector3(0, rollVelocity, 0);
+    }
+
+    public void OnJabEnter() {
+        pi.inputEnable = false;
+        lockPlanar = true;
+    }
+
+    public void OnJabUpdate() {
+        thrustVec = model.transform.forward * anim.GetFloat("jabVelocity");
     }
 }
