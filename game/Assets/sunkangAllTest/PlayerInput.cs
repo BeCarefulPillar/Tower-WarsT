@@ -34,6 +34,8 @@ public class PlayerInput : MonoBehaviour {
     public bool jump = true;
     private bool lastJump = false; 
 
+    public bool attack = true;
+    public bool lastAttack = true;
     [Header("========= Other ========")]
     public bool inputEnable = true; //flag
     
@@ -81,6 +83,14 @@ public class PlayerInput : MonoBehaviour {
             jump = false;
         }
         lastJump = newJump;
+
+        var newAttack = Input.GetKey(keyC);
+        if (newAttack != lastAttack && newAttack == true) {
+            attack = true;
+        } else {
+            attack = false;
+        }
+        lastAttack = newAttack;
     }
 
     Vector2 SquareToCricle(Vector2 input) {
