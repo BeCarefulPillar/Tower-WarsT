@@ -1,0 +1,6 @@
+_ID,Comment:string,CN:string,CNT:string,EN:string,KR:string
+LOC_SAY_HELLO_WORLD,系统,你好,,hello,
+LOC_SUN_KANG,系统,孙康,,Kang.Sun,
+LOC_SUN_KANG_DES,系统,牛逼的英雄,,Niubility Hero,
+LOC_XIANG_WEI,系统,向伟,,Wei.Xiang,
+LOC_XIANG_WEI_DES,系统,牛逼的老师,,Niubility Teach,
